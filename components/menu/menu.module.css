@@ -1,0 +1,122 @@
+.menuContainer {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: white;
+}
+
+.menuWrapper {
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.brandTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Fuggles', cursive;
+    font-size: 3rem;
+}
+
+.slideMenuBtn {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 35px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.slideMenuBtn span {
+    width: 35px;
+    border: 1px solid black;
+}
+
+.slideMenuBtn span:nth-child(2) {
+    width: 40px;
+    border: 1px solid black;
+}
+
+/* Drawer */
+.drawer {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition-timing-function: ease-out;
+    transition-duration: .15s;
+    transition-property: transform;
+    display: flex;
+    flex-direction: column;
+    max-width: 38.75rem
+}
+
+.drawerOpen{
+    transform: translateZ(0);
+}
+
+.drawerClosed {
+    transform: translate3d(-100%,0,0);
+}
+
+.drawerHeader {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: 0 1.25rem;
+    height: 200px;
+}
+
+.drawerBody {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: 0 1.25rem;
+    height: 100px;
+    justify-content: space-evenly;
+    font-family: 'EB Garamond', serif;
+    font-size: 2rem;
+}
+
+.drawerItem {
+
+}
+
+.drawerCloseBtn {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    /* padding: 10px; */
+}
+
+/* Media */
+@media only screen and (max-width: 425px) {
+    .brandTitle {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .brandTitle {
+        font-size: 2rem;
+    }
+
+    .slideMenuBtn {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 30px;
+        height: 16px;
+        cursor: pointer;
+    }
+}
+
+/* Animation */
+
