@@ -55,7 +55,7 @@
     transition-property: transform;
     display: flex;
     flex-direction: column;
-    max-width: 38.75rem
+    max-width: 38.75rem;
 }
 
 .drawerOpen{
