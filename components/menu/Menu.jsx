@@ -1,12 +1,16 @@
-import { useState } from 'react'
+import { useContext } from 'react'
 import styles from './menu.module.css'
 import Drawer from './Drawer'
+import { ACTIONS } from '../../utils/state/reducer'
+import { AppContext } from '../../pages'
 
-const Menu = () => {
-    const [isDrawerOpen, setDrawerState] = useState(false)
+const Menu = ({dispatch}) => {
+    const context = useContext(AppContext)
+
+    const {isDrawerOpen} = context
 
     const handleDrawer = () => {
-        setDrawerState(!isDrawerOpen)
+        dispatch({type: ACTIONS.drawer})
     }
 
     return (
@@ -18,7 +22,7 @@ const Menu = () => {
                     <span></span>
                 </div>
                 <div className={styles.brandTitle}>
-                    <strong>Photo</strong> Magazine
+                    <strong>{"Horea's"}</strong> Photography
                 </div>
             </div>
             {/* Drawer */}

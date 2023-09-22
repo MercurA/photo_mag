@@ -1,8 +1,15 @@
 import styles from './cardImage.module.css'
-
-const CardImage = () => {
+import Image from 'next/image'
+const CardImage = ({image}) => {
     return (
-        <div className={styles.cardContainer}></div>
+        <div className={styles.cardWrapper}>
+            <Image 
+                src={image.path} 
+                alt='default image' 
+                fill={true}
+                className='image'
+            />
+        </div>
     )
 }
 

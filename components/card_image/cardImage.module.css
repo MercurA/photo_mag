@@ -1,3 +1,44 @@
-.cardContainer {
-    
+.cardWrapper {
+    display: flex;
+    width: 40%;
+    margin: 10px;
+}
+
+.cardWrapper>img {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+}
+
+.container {
+    margin-top: 100px;
+    display: flex;
+    flex-flow: wrap;
+    position: absolute;
+    overflow-y: hidden;
+}
+
+@media only screen and (max-width: 1440px) {
+
+    .cardWrapper {
+        display: flex;
+        width: 50%;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        margin-top: 100px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardWrapper {
+        display: flex;
+        width: 90%;
+        margin-top: 10px;
+    }
 }

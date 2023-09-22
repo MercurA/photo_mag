@@ -1,0 +1,26 @@
+.container {
+    display: inline;
+    position: fixed;
+    width: 38px;
+    height: 38px;
+    z-index: 61;
+    top: 24px;
+    right: 0;
+    background-color: white;
+}
+
+.hideIcon {
+    display: none;
+}
+
+.stopped {
+    width: 38px;
+    height: 38px;
+}
+
+.stopped::after {
+    content: "\\";
+    position: absolute;
+    top: -2px;
+    right: 25px;
+}

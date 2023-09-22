@@ -1,9 +1,8 @@
 .container {
-    width: 100%;
+    width: 1300px;
     height: 800px;
+    margin: auto;
 }
-
-
 
 @media only screen and (max-width: 1440px) {
     .container {
@@ -11,7 +10,7 @@
         height: 800px;
         margin: auto;
     }
-    
+
     .image {
         width: 1300px;
         height: 700px;
@@ -24,16 +23,15 @@
         height: 700px;
         margin: auto;
     }
-    
+
     .image {
         width: 900px;
         height: 500px;
     }
 }
+
 @media only screen and (max-width: 768px) {
     .container {
-       display: none;
-    }   
+        display: none;
+    }
 }
-
-/* https://cdn.pixabay.com/photo/2023/06/11/16/07/switzerland-8056381_960_720.jpg 1x, https://cdn.pixabay.com/photo/2023/06/11/16/07/switzerland-8056381_1280.jpg 2x */
