@@ -1,26 +1,37 @@
 import Image from 'next/image'
+import { useContext, useEffect, useRef } from 'react'
+
 import styles from './music.module.css'
-import { useContext, useState } from 'react'
 import { AppContext } from '../../pages'
 import { ACTIONS } from '../../utils/state/reducer'
 
-const MusicContainer = ({state, dispatch}) => {
+const MusicContainer = ({ dispatch }) => {
     const context = useContext(AppContext)
+    const audioRef = useRef()
 
-    const {music, isDrawerOpen} = context
+    const { music, isDrawerOpen } = context
+
+    useEffect(() => {
+        if (music) {
+            audioRef.current.play()
+        } else {
+            audioRef.current.pause()
+        }
+    }, [music])
 
     const handlePlay = () => {
-        dispatch({type: ACTIONS.music})
+        dispatch({ type: ACTIONS.music })
     }
 
     return (
         <div className={`${styles.container} ${isDrawerOpen && styles.hideIcon}`} onClick={handlePlay}>
             {music ?
-                <Image src='/icons/music.svg' width={20} height={20} alt="play music icon"/> :
+                <Image src='/icons/music.svg' width={20} height={20} alt="play music icon" /> :
                 <div className={styles.stopped}>
-                    <Image src={'/icons/music-stop.svg'} width={20} height={20} alt="stop music icon"/>
+                    <Image src={'/icons/music-stop.svg'} width={20} height={20} alt="stop music icon" />
                 </div>
             }
+            <audio ref={audioRef} autoPlay loop src='/media/trance1.flac' id='audio'></audio>
         </div>
     )
 }

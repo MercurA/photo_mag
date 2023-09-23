@@ -1,11 +1,15 @@
 export const initialState = {
     music: false,
-    isDrawerOpen: false
+    isDrawerOpen: false,
+    image: null,
+    isPopupOn: false,
 }
 
 export const ACTIONS = {
     music: 'music',
-    drawer: 'drawer'
+    drawer: 'drawer',
+    setImageDetails: 'setImageDetails',
+    setPopupState: 'setPopupState',
 }
 
 export default function reducer (state, action) {
@@ -19,6 +23,16 @@ export default function reducer (state, action) {
             return {
                 ...state,
                 isDrawerOpen: !state.isDrawerOpen
+            }
+        case ACTIONS.setImageDetails:
+            return {
+                ...state,
+                image: action.payload
+            }
+        case ACTIONS.setPopupState:
+            return {
+                ...state,
+                isPopupOn: action.payload
             }
         default:
             return state

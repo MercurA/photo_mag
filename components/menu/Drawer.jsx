@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from './menu.module.css'
 
-const LIST = ['Photos', 'Shop']
+const LIST = ['Galery', 'Shop']
 
 const Drawer = ({ isOpen, handleDrawer }) => {
     return (
