@@ -8,14 +8,14 @@ import { AppContext } from '../../pages'
 const Menu = ({dispatch}) => {
     const context = useContext(AppContext)
 
-    const {isDrawerOpen} = context
+    const {isDrawerOpen, isPopupOn} = context
 
     const handleDrawer = () => {
         dispatch({type: ACTIONS.drawer})
     }
 
     return (
-        <div className={styles.menuContainer}>
+        <div className={`${styles.menuContainer} ${isPopupOn && styles.hideMenu}`}>
             <div className={styles.menuWrapper} onClick={handleDrawer}>
                 <div className={styles.slideMenuBtn}>
                     <span></span>

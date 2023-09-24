@@ -5,10 +5,11 @@ import Menu from "../components/menu/Menu";
 import MusicContainer from "../components/music/MusicContainer";
 import reducer, { initialState } from "../utils/state/reducer";
 import ImagePortal from "../components/card_image/ImagePortal";
+import Head from "next/head";
 
 export const AppContext = createContext(null)
 
-export default function Home() {
+const Home = () => {
   const [state, dispatch] = useReducer(reducer, initialState)
   
   const preventDefault = (e) => {
@@ -29,6 +30,11 @@ export default function Home() {
 
   return (
     <AppContext.Provider value={state}>
+      <Head>
+        <title>{"Horea's Photography"}</title>
+        <meta name="home page" content="Photo galery"/>
+        <meta name="keywords" content="photos, photography, hi-res, galery"/>
+      </Head>
       <div >
         <Menu dispatch={dispatch} />
         <CardContainer dispatch={dispatch} />
@@ -38,3 +44,5 @@ export default function Home() {
     </AppContext.Provider>
   )
 }
+
+export default Home

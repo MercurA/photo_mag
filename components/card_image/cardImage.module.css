@@ -52,11 +52,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 99;
 }
 
 .imageRendered {
     width: 80%;
-    
 }
 
 .imageRendered > img {
@@ -65,3 +65,16 @@
     position: relative !important;
     height: unset !important;
 }
+
+
+@media only screen and (max-width: 425px) {
+    .imageRendered {
+        width: 94%;
+    }
+}
+
+@media (orientation: landscape) {
+    .imageRendered {
+        width: 64%;
+    }
+  }

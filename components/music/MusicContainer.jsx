@@ -9,7 +9,7 @@ const MusicContainer = ({ dispatch }) => {
     const context = useContext(AppContext)
     const audioRef = useRef()
 
-    const { music, isDrawerOpen } = context
+    const { music, isDrawerOpen, isPopupOn } = context
 
     useEffect(() => {
         if (music) {
@@ -24,7 +24,7 @@ const MusicContainer = ({ dispatch }) => {
     }
 
     return (
-        <div className={`${styles.container} ${isDrawerOpen && styles.hideIcon}`} onClick={handlePlay}>
+        <div className={`${styles.container} ${(isDrawerOpen || isPopupOn) && styles.hideIcon}`} onClick={handlePlay}>
             {music ?
                 <Image src='/icons/music.svg' width={20} height={20} alt="play music icon" /> :
                 <div className={styles.stopped}>
