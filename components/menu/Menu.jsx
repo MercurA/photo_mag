@@ -4,6 +4,8 @@ import styles from './menu.module.css'
 import Drawer from './Drawer'
 import { ACTIONS } from '../../utils/state/reducer'
 import { AppContext } from '../../pages'
+import MusicContainer from '../music/MusicContainer'
+import { strings } from '../../utils/constants'
 
 const Menu = ({dispatch}) => {
     const context = useContext(AppContext)
@@ -25,6 +27,7 @@ const Menu = ({dispatch}) => {
                 <div className={styles.brandTitle}>
                     <strong>{"Horea's"}</strong> Photography
                 </div>
+                <MusicContainer dispatch={dispatch} />
             </div>
             {/* Drawer */}
             <Drawer isOpen={isDrawerOpen} handleDrawer={handleDrawer}/>

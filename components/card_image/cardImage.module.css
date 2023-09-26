@@ -19,11 +19,21 @@
     overflow-y: hidden;
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 2560px) {
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: 100%;
+        align-items: flex-end;
+    }
 
     .cardWrapper {
         display: flex;
-        width: 50%;
+        width: auto;
+        height: 12vw;
         margin: 10px;
     }
 }
@@ -31,6 +41,7 @@
 @media only screen and (max-width: 820px) {
     .container {
         margin-top: 100px;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -39,9 +50,78 @@
     .cardWrapper {
         display: flex;
         width: 90%;
+        height: 100%;
         margin-top: 10px;
     }
+
+    .imageH {
+        width: 90%;
+    }
+
+    .imageW {
+        width: 90%;
+    }
 }
+
+@media only screen and (max-width: 425px) {
+
+    .container {
+        margin-top: 100px;
+        display: flex;
+        flex-flow: wrap;
+        position: absolute;
+        overflow-y: hidden;
+    }
+
+    .cardWrapper {
+        display: flex;
+        height: 100%;
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .imageH {
+        width: 94%;
+    }
+
+    .imageW {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 3000px) and (orientation: landscape) {
+    .imageW {
+        width: 70%;
+    }
+    .imageH {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1440px) and (orientation: landscape) {
+    .imageW {
+        width: 90%;
+    }
+    .imageH {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 800px) and (orientation: landscape) {
+    .imageW {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 428px) and (orientation: landscape) {
+    .imageH {
+        width: 64%;
+    }
+    .imageW {
+        width: 46%;
+    }
+}
+
 
 /* Image pop */
 .imagePopContainer {
@@ -55,11 +135,22 @@
     z-index: 99;
 }
 
-.imageRendered {
-    width: 80%;
+/* .imageH {
+    width: 55%;
 }
 
-.imageRendered > img {
+.imageW {
+    width: 94%;
+} */
+
+.imageH > img {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+}
+
+.imageW > img {
     object-fit: contain;
     width: 100% !important;
     position: relative !important;
@@ -67,14 +158,3 @@
 }
 
 
-@media only screen and (max-width: 425px) {
-    .imageRendered {
-        width: 94%;
-    }
-}
-
-@media (orientation: landscape) {
-    .imageRendered {
-        width: 64%;
-    }
-  }

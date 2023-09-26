@@ -16,3 +16,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.mainContainer {
+  display: flex;
+  flex-flow: column;
+}

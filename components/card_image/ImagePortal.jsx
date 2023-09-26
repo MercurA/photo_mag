@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import { useContext, useEffect, useState } from "react"
 import { createPortal } from "react-dom"
 import Image from "next/image"
 
@@ -8,8 +8,20 @@ import { ACTIONS } from "../../utils/state/reducer"
 
 const ImagePortal = ({dispatch}) => {
     const context = useContext(AppContext)
+    const [imageClass, setImageClass] = useState()
 
     const {image} = context
+
+    useEffect(() => {
+        function detectTypeOfImage() {
+            if(image.width > image.height) {
+                setImageClass(styles.imageW)
+            } else {
+                setImageClass(styles.imageH)
+            }
+        }
+        detectTypeOfImage()
+    }, [imageClass])
 
     const disableImagePopUp = () => {
         if(image !== null) {
@@ -24,10 +36,11 @@ const ImagePortal = ({dispatch}) => {
         }
     }
     
+
     const createImagePop = () => {
         return (
             <div className={styles.imagePopContainer}>
-                <div className={styles.imageRendered} onClick={disableImagePopUp}>
+                <div className={imageClass} onClick={disableImagePopUp}>
                     <Image src={image.path} fill alt=""/>
                 </div>
             </div>
