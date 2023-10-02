@@ -1,11 +1,11 @@
-import { createContext, useEffect, useReducer } from "react";
-import Head from "next/head";
+import { createContext, useEffect, useReducer } from "react"
+import Head from "next/head"
 
-import reducer, { initialState } from "../utils/state/reducer";
-import CardContainer from "../components/card_image/CardContainer";
-import Menu from "../components/menu/Menu";
-import ImagePortal from "../components/card_image/ImagePortal";
-import { strings } from "../utils/constants";
+import reducer, { initialState } from "../utils/state/reducer"
+import CardContainer from "../components/card_image/CardContainer"
+import Menu from "../components/menu/Menu"
+import ImagePortal from "../components/card_image/ImagePortal"
+import { strings } from "../utils/constants"
 
 export const AppContext = createContext(null)
 
@@ -18,13 +18,13 @@ const Home = () => {
 
   useEffect(() => {
     if (state.isPopupOn) {
-      window.addEventListener('mousewheel', preventDefault, { passive: false });
-      window.addEventListener('touchmove', preventDefault, { passive: false });
+      window.addEventListener('mousewheel', preventDefault, { passive: false })
+      window.addEventListener('touchmove', preventDefault, { passive: false })
     }
 
     return () => {
-      window.removeEventListener('mousewheel', preventDefault, { passive: false });
-      window.removeEventListener('touchmove', preventDefault, { passive: false });
+      window.removeEventListener('mousewheel', preventDefault, { passive: false })
+      window.removeEventListener('touchmove', preventDefault, { passive: false })
     }
   }, [state.isPopupOn])
 
