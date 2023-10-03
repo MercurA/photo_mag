@@ -5,7 +5,6 @@ import Drawer from './Drawer'
 import { ACTIONS } from '../../utils/state/reducer'
 import { AppContext } from '../../pages'
 import MusicContainer from '../music/MusicContainer'
-import { strings } from '../../utils/constants'
 
 const Menu = ({dispatch}) => {
     const context = useContext(AppContext)

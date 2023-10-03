@@ -1,0 +1,44 @@
+.menuContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    z-index: 60;
+}
+
+.menuWrapper {
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.brandTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'EB Garamond', serif;
+    font-size: 1.5rem;
+    font-display: swap
+}
+
+.slideMenuBtn {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 35px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.slideMenuBtn span {
+    width: 35px;
+    border: 1px solid black;
+}
+
+.slideMenuBtn span:nth-child(2) {
+    width: 40px;
+    border: 1px solid black;
+}
