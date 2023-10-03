@@ -17,8 +17,8 @@ const Menu = ({dispatch}) => {
 
     return (
         <div className={`${styles.menuContainer} ${isPopupOn && styles.hideMenu}`}>
-            <div className={styles.menuWrapper} onClick={handleDrawer}>
-                <div className={styles.slideMenuBtn}>
+            <div className={styles.menuWrapper} >
+                <div className={styles.slideMenuBtn} onClick={handleDrawer}>
                     <span></span>
                     <span></span>
                     <span></span>
