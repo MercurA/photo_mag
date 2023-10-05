@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react'
 import { AppContext } from '../../../pages'
-import Drawer from '../Drawer'
+import CardImage from '../CardImage'
 
 describe('Menu', () => {
     let state = {
@@ -8,9 +8,15 @@ describe('Menu', () => {
         isPopupOn: false
     }
     it('should render corectly', () => {
+        const image = {
+                width: 6000,
+                height: 4000,
+                path: '/images/2.jpg',
+                alt: "cityscape"
+        }
         const comp = render(
             <AppContext.Provider value={state}>
-                <Drawer />
+                <CardImage image={image}/>
             </ AppContext.Provider>
         )
 
