@@ -5,6 +5,9 @@ const nextConfig = {
     defaultLocale: "en",
 },
   reactStrictMode: true,
+  experimental: {
+		esmExternals: "loose",
+	},
   images: {
     remotePatterns: [
       {
