@@ -39,7 +39,7 @@ const Home = () => {
       {/* <Menu dispatch={dispatch} />
       <CardContainer dispatch={dispatch} />
       {state.image && <ImagePortal dispatch={dispatch} />} */}
-      <Cover />
+      <Cover image={state?.currentImage}/>
     </AppContext.Provider>
   )
 }

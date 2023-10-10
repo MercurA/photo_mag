@@ -3,7 +3,7 @@ import styles from './cover.module.css'
 import { useState } from 'react';
 
 
-const Cover = () => {
+const Cover = ({image}) => {
     const texts = ['Black & White','Landscape','Journalism']
     const [selected, setSelected] = useState(0)
 
@@ -16,10 +16,10 @@ const Cover = () => {
     return (
         <div className={styles.container}>
             <Image 
-                src={'/images/2.png'} 
+                src={image.path} 
                 fill 
                 sizes="(max-width: 1024px) 70vw , 100vw" 
-                alt="" 
+                alt={image.alt}
                 style={{
                     objectFit: 'contain',
                   }}    

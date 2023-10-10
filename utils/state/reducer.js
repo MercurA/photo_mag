@@ -3,6 +3,10 @@ export const initialState = {
     isDrawerOpen: false,
     image: null,
     isPopupOn: false,
+    currentImage: {
+        path: '/images/2.png',
+        alt: 'mountain view'
+    }
 }
 
 export const ACTIONS = {
