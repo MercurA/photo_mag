@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cover component should render correctly 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="container"
+      >
+        <img
+          alt="mountain view"
+          data-nimg="fill"
+          decoding="async"
+          loading="lazy"
+          sizes="(max-width: 1024px) 70vw , 100vw"
+          src="/_next/image?url=%2Fimages%2F2.png&w=3840&q=75"
+          srcset="/_next/image?url=%2Fimages%2F2.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2F2.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2F2.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2F2.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2F2.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2F2.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2F2.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2F2.png&w=3840&q=75 3840w"
+          style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent;"
+        />
+        <div
+          class="effectContainer"
+        >
+          <div
+            class="blur"
+          >
+            <div
+              class="text textUnblur"
+              data-index="0"
+            >
+              Black & White
+            </div>
+            <div
+              class="text "
+              data-index="1"
+            >
+              Landscape
+            </div>
+            <div
+              class="text "
+              data-index="2"
+            >
+              Journalism
+            </div>
+          </div>
+          <div
+            class="notBlur"
+          />
+          <div
+            class="blur"
+          />
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="container"
+    >
+      <img
+        alt="mountain view"
+        data-nimg="fill"
+        decoding="async"
+        loading="lazy"
+        sizes="(max-width: 1024px) 70vw , 100vw"
+        src="/_next/image?url=%2Fimages%2F2.png&w=3840&q=75"
+        srcset="/_next/image?url=%2Fimages%2F2.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2F2.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2F2.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2F2.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2F2.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2F2.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2F2.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2F2.png&w=3840&q=75 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent;"
+      />
+      <div
+        class="effectContainer"
+      >
+        <div
+          class="blur"
+        >
+          <div
+            class="text textUnblur"
+            data-index="0"
+          >
+            Black & White
+          </div>
+          <div
+            class="text "
+            data-index="1"
+          >
+            Landscape
+          </div>
+          <div
+            class="text "
+            data-index="2"
+          >
+            Journalism
+          </div>
+        </div>
+        <div
+          class="notBlur"
+        />
+        <div
+          class="blur"
+        />
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
