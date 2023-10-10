@@ -7,6 +7,8 @@ const Cover = () => {
     const texts = ['Black & White','Landscape','Journalism']
     const [selected, setSelected] = useState(0)
 
+    const classStyleBlur = index => selected === index ? styles.textUnblur : ''
+
     const handleSelected = (e) => {
         setSelected(Number(e.target.dataset.index))
     }
@@ -16,7 +18,7 @@ const Cover = () => {
             <Image 
                 src={'/images/2.png'} 
                 fill 
-                sizes="100vw" 
+                sizes="(max-width: 1024px) 70vw , 100vw" 
                 alt="" 
                 style={{
                     objectFit: 'contain',
@@ -27,7 +29,7 @@ const Cover = () => {
                   {texts.map((el,index) => (
                     <div 
                         onClick={handleSelected} 
-                        className={`${styles.text} ${selected === index && styles.textUnblur}`} 
+                        className={`${styles.text} ${classStyleBlur(index)}`} 
                         key={index} 
                         data-index={index}
                     >{el}</div>
@@ -35,7 +37,6 @@ const Cover = () => {
                 </div>
                 <div className={styles.notBlur}></div>
                 <div className={styles.blur}>
-
                 </div>
             </div>
         </div>
