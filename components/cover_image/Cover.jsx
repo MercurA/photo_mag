@@ -16,10 +16,10 @@ const Cover = ({image}) => {
     return (
         <div className={styles.container}>
             <Image 
-                src={image.path} 
+                src={image} 
                 fill 
                 sizes="(max-width: 1024px) 70vw , 100vw" 
-                alt={image.alt}
+                alt={''}
                 style={{
                     objectFit: 'contain',
                   }}    

@@ -3,10 +3,8 @@ export const initialState = {
     isDrawerOpen: false,
     image: null,
     isPopupOn: false,
-    currentImage: {
-        path: '/images/2.png',
-        alt: 'mountain view'
-    }
+    imageList: ['/images/1.jpg','/images/2.png','/images/3.jpg','/images/4.jpg','/images/5.png'],
+    currentImage: '/images/2.png'
 }
 
 export const ACTIONS = {
@@ -14,6 +12,7 @@ export const ACTIONS = {
     drawer: 'drawer',
     setImageDetails: 'setImageDetails',
     setPopupState: 'setPopupState',
+    setCurrentImageToDisplay: 'setCurrentImageToDisplay'
 }
 
 export default function reducer (state, action) {
@@ -37,6 +36,11 @@ export default function reducer (state, action) {
             return {
                 ...state,
                 isPopupOn: action.payload
+            }
+        case ACTIONS.setCurrentImageToDisplay:
+            return {
+                ...state,
+                currentImage: action.payload
             }
         default:
             return state
