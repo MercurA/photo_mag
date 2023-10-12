@@ -11,10 +11,15 @@ const Galery = ({ dispatch }) => {
     const itemRef = useRef(null)
     const [items, setItems] = useState(imageList)
 
-    const handleScroll = (e) => {
-        const { scrollTop, scrollHeight, clientHeight } = scrollContainerRef.current
-        if (scrollTop + clientHeight === scrollHeight) {
+    useEffect(() => {
+        const current = scrollContainerRef.current
+        current.addEventListener('wheel', handleScroll)
 
+        return () => current.removeEventListener('wheel', handleScroll)
+    },[items])
+
+    const handleScroll = (e) => {
+        if (e.deltaY > 0) {
             setItems((prevItems) => {
                 dispatch({
                     type: ACTIONS.setCurrentImageToDisplay,
@@ -25,7 +30,17 @@ const Galery = ({ dispatch }) => {
                     prevItems[0]
                 ]
             });
-            scrollContainerRef.current.scrollTop = 0;
+        } else if (e.deltaY < 0) {
+            setItems((prevItems) => {
+                dispatch({
+                    type: ACTIONS.setCurrentImageToDisplay,
+                    payload: prevItems[prevItems.length - 1]
+                })
+                return [
+                    prevItems[prevItems.length - 1],
+                    ...prevItems.slice(0, -1),
+                ]
+            });
         }
     }
 
@@ -33,7 +48,6 @@ const Galery = ({ dispatch }) => {
         <div
             ref={scrollContainerRef}
             className={styles.container}
-            onScroll={handleScroll}
         >
             {items.map((image, index) => (
                 <div className={styles.item} key={index} ref={itemRef}>
