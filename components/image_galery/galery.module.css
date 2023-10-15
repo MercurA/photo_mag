@@ -2,10 +2,9 @@
     position: absolute;
     right: 2%;
     top: 20%;
-    /* max-height: 500px; */
     height: 500px;
     overflow: auto;
-    width: 200px;
+    width: 125px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,11 +13,18 @@
 
 .focus {
     position: fixed;
-    border: 3px solid red;
-    width: 110px;
-    height: 110px;
+    width: 115px;
+    height: 105px;
     z-index: 99;
-    top: 20%;
+    padding: calc(0px + 5px);
+    outline: 2px solid #f9dc5c;
+    outline-offset: calc(-1*5px);
+    -webkit-mask: conic-gradient(at 15px 15px,#0000 75%,#000 0) 0 0/calc(100% - 15px) calc(100% - 15px), linear-gradient(#000 0 0) content-box;
+}
+
+.focus:after {
+    contain: '';
+    
 }
 
 .item {
@@ -34,46 +40,22 @@
     position: relative;
 }
 
-.rimRight {
-    background-color: black;
-    position: absolute;
-    right: 100%;
-    top: 1%;
-    width: 20px;
-    height: 88px;
-    z-index: 99;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: column;
-    
-}
+@media only screen and (max-width: 800px ) {
+    .container {
+        display: flex;
+        flex-flow: row;
+        width: 100%;
+        height: 200px;
+        top: 75%;
+        right: 0;
+    }
 
-.rimLeft {
-    background-color: black;
-    position: absolute;
-    left: 100%;
-    top: 1%;
-    width: 20px;
-    height: 88px;
-    z-index: 99;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: column;
-}
-
-.blackLine {
-    background-color: black;
-    width: 100%;
-    height: 5px;
-    position: absolute;
-    bottom: 100%;
-}
-
-.rimHole {
-    background-color: white;
-    height: 10px;
-    width: 10px;
-    border-radius: 2px;
+    .item {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+        z-index: 99;
+        color: white;
+    }
 }

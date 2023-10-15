@@ -9,17 +9,23 @@ const Galery = ({ dispatch }) => {
     const { imageList } = context
     const scrollContainerRef = useRef(null)
     const itemRef = useRef(null)
-    const [items, setItems] = useState(imageList)
+    const [items, setItems] = useState(imageList['black&white'])
 
     useEffect(() => {
         const current = scrollContainerRef.current
 
         const handleScroll = (e) => {
+            if(e.touches) {
+                console.log(e.changedTouches[0].pageX)
+                current.addEventListener('touchend', (e) => {
+                    console.log(e.changedTouches[0].pageX)
+                })
+            }
             if (e.deltaY > 0) {
                 setItems((prevItems) => {
                     dispatch({
                         type: ACTIONS.setCurrentImageToDisplay,
-                        payload: prevItems[1]
+                        payload: prevItems[3]
                     })
                     return [
                         ...prevItems.slice(1),
@@ -30,7 +36,7 @@ const Galery = ({ dispatch }) => {
                 setItems((prevItems) => {
                     dispatch({
                         type: ACTIONS.setCurrentImageToDisplay,
-                        payload: prevItems[prevItems.length - 1]
+                        payload: prevItems[prevItems.length - 4]
                     })
                     return [
                         prevItems[prevItems.length - 1],
@@ -39,34 +45,32 @@ const Galery = ({ dispatch }) => {
                 });
             }
         }
-
+        current.addEventListener('touchstart', handleScroll)
         current.addEventListener('wheel', handleScroll)
 
-        return () => current.removeEventListener('wheel', handleScroll)
+        return () => {
+            current.removeEventListener('touchstart', handleScroll)
+            current.removeEventListener('wheel', handleScroll)
+        }
     }, [items, dispatch])
 
 
 
     return (
-        <>
+        <>  
             <div
                 ref={scrollContainerRef}
                 className={styles.container}
-            >
+            >   
+                <div className={styles.focus}></div>
                 {items.map((image, index) => (
                     <div className={styles.item} key={index} ref={itemRef}>
-                        <div className={styles.rimRight}>
-                            {[1, 2, 3, 4].map((el) => (<div key={el} className={styles.rimHole}></div>))}
-                        </div>
                         <Image
                             src={image}
                             alt={''}
                             fill={true}
                             className='image'
                         />
-                        <div className={styles.rimLeft}>
-                            {[1, 2, 3, 4].map((el) => (<div key={el} className={styles.rimHole}></div>))}
-                        </div>
                     </div>
                 ))}
             </div>

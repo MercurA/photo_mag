@@ -3,7 +3,11 @@ export const initialState = {
     isDrawerOpen: false,
     image: null,
     isPopupOn: false,
-    imageList: ['/images/1.jpg','/images/2.png','/images/3.jpg','/images/4.jpg','/images/5.png'],
+    imageList: {
+        'black&white' : ['/images/1.jpg','/images/2.png','/images/3.jpg','/images/4.jpg','/images/5.png'],
+        'journalism': [],
+        'landscape': []
+    },
     currentImage: '/images/2.png'
 }
 
