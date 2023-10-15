@@ -8,16 +8,17 @@ exports[`Cover component should render correctly 1`] = `
       <div
         class="container"
       >
-        <img
-          alt="mountain view"
-          data-nimg="fill"
-          decoding="async"
-          loading="lazy"
-          sizes="(max-width: 1024px) 70vw , 100vw"
-          src="/_next/image?url=%2Fimages%2F2.png&w=3840&q=75"
-          srcset="/_next/image?url=%2Fimages%2F2.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2F2.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2F2.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2F2.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2F2.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2F2.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2F2.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2F2.png&w=3840&q=75 3840w"
-          style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent;"
-        />
+        <div
+          class="effect"
+        >
+          <img
+            alt=""
+            data-nimg="fill"
+            decoding="async"
+            src=""
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent; padding: 40px;"
+          />
+        </div>
         <div
           class="effectContainer"
         >
@@ -27,25 +28,25 @@ exports[`Cover component should render correctly 1`] = `
             <div
               class="text textUnblur"
               data-index="0"
+              data-tag=""
             >
               Black & White
             </div>
             <div
               class="text "
               data-index="1"
+              data-tag=""
             >
               Landscape
             </div>
             <div
               class="text "
               data-index="2"
+              data-tag=""
             >
               Journalism
             </div>
           </div>
-          <div
-            class="notBlur"
-          />
           <div
             class="blur"
           />
@@ -57,16 +58,17 @@ exports[`Cover component should render correctly 1`] = `
     <div
       class="container"
     >
-      <img
-        alt="mountain view"
-        data-nimg="fill"
-        decoding="async"
-        loading="lazy"
-        sizes="(max-width: 1024px) 70vw , 100vw"
-        src="/_next/image?url=%2Fimages%2F2.png&w=3840&q=75"
-        srcset="/_next/image?url=%2Fimages%2F2.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2F2.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2F2.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2F2.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2F2.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2F2.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2F2.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2F2.png&w=3840&q=75 3840w"
-        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent;"
-      />
+      <div
+        class="effect"
+      >
+        <img
+          alt=""
+          data-nimg="fill"
+          decoding="async"
+          src=""
+          style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent; padding: 40px;"
+        />
+      </div>
       <div
         class="effectContainer"
       >
@@ -76,25 +78,25 @@ exports[`Cover component should render correctly 1`] = `
           <div
             class="text textUnblur"
             data-index="0"
+            data-tag=""
           >
             Black & White
           </div>
           <div
             class="text "
             data-index="1"
+            data-tag=""
           >
             Landscape
           </div>
           <div
             class="text "
             data-index="2"
+            data-tag=""
           >
             Journalism
           </div>
         </div>
-        <div
-          class="notBlur"
-        />
         <div
           class="blur"
         />

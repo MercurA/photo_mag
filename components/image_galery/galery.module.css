@@ -1,0 +1,61 @@
+.container {
+    position: absolute;
+    right: 2%;
+    top: 20%;
+    height: 500px;
+    overflow: auto;
+    width: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.focus {
+    position: fixed;
+    width: 115px;
+    height: 105px;
+    z-index: 99;
+    padding: calc(0px + 5px);
+    outline: 2px solid #f9dc5c;
+    outline-offset: calc(-1*5px);
+    -webkit-mask: conic-gradient(at 15px 15px,#0000 75%,#000 0) 0 0/calc(100% - 15px) calc(100% - 15px), linear-gradient(#000 0 0) content-box;
+}
+
+.focus:after {
+    contain: '';
+    
+}
+
+.item {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    z-index: 99;
+    color: white;
+}
+
+.image {
+    position: relative;
+}
+
+@media only screen and (max-width: 800px ) {
+    .container {
+        display: flex;
+        flex-flow: row;
+        width: 100%;
+        height: 200px;
+        top: 75%;
+        right: 0;
+    }
+
+    .item {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+        z-index: 99;
+        color: white;
+    }
+}

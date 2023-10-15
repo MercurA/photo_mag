@@ -15,15 +15,19 @@ const Cover = ({image}) => {
 
     return (
         <div className={styles.container}>
-            <Image 
-                src={image.path} 
-                fill 
-                sizes="(max-width: 1024px) 70vw , 100vw" 
-                alt={image.alt}
-                style={{
-                    objectFit: 'contain',
-                  }}    
-            />
+            <div className={styles.effect}>
+                <Image 
+                    src={image} 
+                    fill 
+                    sizes="(max-width: 1024px) 70vw , 100vw" 
+                    alt={''}
+                    style={{
+                        objectFit: 'contain',
+                        padding: '40px',
+                        
+                    }}
+                />
+            </div>
             <div className={styles.effectContainer}>
                 <div className={styles.blur}>
                   {texts.map((el,index) => (
@@ -32,10 +36,10 @@ const Cover = ({image}) => {
                         className={`${styles.text} ${classStyleBlur(index)}`} 
                         key={index} 
                         data-index={index}
+                        data-tag=""
                     >{el}</div>
                   ))}
                 </div>
-                <div className={styles.notBlur}></div>
                 <div className={styles.blur}>
                 </div>
             </div>
