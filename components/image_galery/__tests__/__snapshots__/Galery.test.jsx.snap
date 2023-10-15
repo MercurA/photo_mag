@@ -9,52 +9,8 @@ exports[`Galery should render correctly 1`] = `
         class="container"
       >
         <div
-          class="item"
-        >
-          <div
-            class="rimRight"
-          >
-            <div
-              class="rimHole"
-            />
-            <div
-              class="rimHole"
-            />
-            <div
-              class="rimHole"
-            />
-            <div
-              class="rimHole"
-            />
-          </div>
-          <img
-            alt=""
-            class="image"
-            data-nimg="fill"
-            decoding="async"
-            loading="lazy"
-            sizes="100vw"
-            src="/_next/image?url=%2Fimages%2F1.jpg&w=3840&q=75"
-            srcset="/_next/image?url=%2Fimages%2F1.jpg&w=640&q=75 640w, /_next/image?url=%2Fimages%2F1.jpg&w=750&q=75 750w, /_next/image?url=%2Fimages%2F1.jpg&w=828&q=75 828w, /_next/image?url=%2Fimages%2F1.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2F1.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2F1.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2F1.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2F1.jpg&w=3840&q=75 3840w"
-            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-          />
-          <div
-            class="rimLeft"
-          >
-            <div
-              class="rimHole"
-            />
-            <div
-              class="rimHole"
-            />
-            <div
-              class="rimHole"
-            />
-            <div
-              class="rimHole"
-            />
-          </div>
-        </div>
+          class="focus"
+        />
       </div>
       <div />
     </div>
@@ -64,52 +20,8 @@ exports[`Galery should render correctly 1`] = `
       class="container"
     >
       <div
-        class="item"
-      >
-        <div
-          class="rimRight"
-        >
-          <div
-            class="rimHole"
-          />
-          <div
-            class="rimHole"
-          />
-          <div
-            class="rimHole"
-          />
-          <div
-            class="rimHole"
-          />
-        </div>
-        <img
-          alt=""
-          class="image"
-          data-nimg="fill"
-          decoding="async"
-          loading="lazy"
-          sizes="100vw"
-          src="/_next/image?url=%2Fimages%2F1.jpg&w=3840&q=75"
-          srcset="/_next/image?url=%2Fimages%2F1.jpg&w=640&q=75 640w, /_next/image?url=%2Fimages%2F1.jpg&w=750&q=75 750w, /_next/image?url=%2Fimages%2F1.jpg&w=828&q=75 828w, /_next/image?url=%2Fimages%2F1.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2F1.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2F1.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2F1.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2F1.jpg&w=3840&q=75 3840w"
-          style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
-        />
-        <div
-          class="rimLeft"
-        >
-          <div
-            class="rimHole"
-          />
-          <div
-            class="rimHole"
-          />
-          <div
-            class="rimHole"
-          />
-          <div
-            class="rimHole"
-          />
-        </div>
-      </div>
+        class="focus"
+      />
     </div>
     <div />
   </div>,

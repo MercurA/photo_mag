@@ -15,12 +15,6 @@ const Galery = ({ dispatch }) => {
         const current = scrollContainerRef.current
 
         const handleScroll = (e) => {
-            if(e.touches) {
-                console.log(e.changedTouches[0].pageX)
-                current.addEventListener('touchend', (e) => {
-                    console.log(e.changedTouches[0].pageX)
-                })
-            }
             if (e.deltaY > 0) {
                 setItems((prevItems) => {
                     dispatch({
@@ -63,7 +57,7 @@ const Galery = ({ dispatch }) => {
                 className={styles.container}
             >   
                 <div className={styles.focus}></div>
-                {items.map((image, index) => (
+                {items?.map((image, index) => (
                     <div className={styles.item} key={index} ref={itemRef}>
                         <Image
                             src={image}

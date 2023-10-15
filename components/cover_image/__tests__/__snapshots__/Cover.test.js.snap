@@ -8,13 +8,17 @@ exports[`Cover component should render correctly 1`] = `
       <div
         class="container"
       >
-        <img
-          alt=""
-          data-nimg="fill"
-          decoding="async"
-          src=""
-          style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent;"
-        />
+        <div
+          class="effect"
+        >
+          <img
+            alt=""
+            data-nimg="fill"
+            decoding="async"
+            src=""
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent; padding: 40px;"
+          />
+        </div>
         <div
           class="effectContainer"
         >
@@ -24,25 +28,25 @@ exports[`Cover component should render correctly 1`] = `
             <div
               class="text textUnblur"
               data-index="0"
+              data-tag=""
             >
               Black & White
             </div>
             <div
               class="text "
               data-index="1"
+              data-tag=""
             >
               Landscape
             </div>
             <div
               class="text "
               data-index="2"
+              data-tag=""
             >
               Journalism
             </div>
           </div>
-          <div
-            class="notBlur"
-          />
           <div
             class="blur"
           />
@@ -54,13 +58,17 @@ exports[`Cover component should render correctly 1`] = `
     <div
       class="container"
     >
-      <img
-        alt=""
-        data-nimg="fill"
-        decoding="async"
-        src=""
-        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent;"
-      />
+      <div
+        class="effect"
+      >
+        <img
+          alt=""
+          data-nimg="fill"
+          decoding="async"
+          src=""
+          style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent; padding: 40px;"
+        />
+      </div>
       <div
         class="effectContainer"
       >
@@ -70,25 +78,25 @@ exports[`Cover component should render correctly 1`] = `
           <div
             class="text textUnblur"
             data-index="0"
+            data-tag=""
           >
             Black & White
           </div>
           <div
             class="text "
             data-index="1"
+            data-tag=""
           >
             Landscape
           </div>
           <div
             class="text "
             data-index="2"
+            data-tag=""
           >
             Journalism
           </div>
         </div>
-        <div
-          class="notBlur"
-        />
         <div
           class="blur"
         />
