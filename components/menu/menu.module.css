@@ -3,9 +3,11 @@
     height: 70px;
     display: flex;
     align-items: center;
-    position: fixed;
-    background-color: white;
+    position: relative;
+    background-color: #0b0b0b;
     z-index: 60;
+    flex-flow: column;
+    color: white;
 }
 
 .hideMenu {
@@ -111,6 +113,12 @@
     }
 }
 
+@media only screen and (max-width: 900px) {
+    .menuDrawerText {
+        font-size: 1.5rem;
+    }
+}
+
 @media only screen and (max-width: 425px) {
     .brandTitle {
         font-size: 1.2rem;
@@ -130,4 +138,30 @@
         height: 16px;
         cursor: pointer;
     }
+}
+
+
+.menuDrawerClosed {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    transition: 300ms ease-out;
+    background-color: #0b0b0b;
+    margin-top: -100px;
+}
+
+.menuDrawerOpen {
+    margin-top: 20px;
+    transition: 300ms ease-in;
+}
+
+.menuDrawer div {
+    margin-bottom: 10px;
+}
+
+.menuDrawerText {
+    color: white;
+    font-family: 'EB Garamond', serif;
 }

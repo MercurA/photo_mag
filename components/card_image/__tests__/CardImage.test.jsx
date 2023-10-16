@@ -6,19 +6,15 @@ import CardContainer from '../CardContainer'
 describe('Menu', () => {
     let state = {
         isDrawerOpen: false,
-        isPopupOn: false
+        isPopupOn: false,
+        imageList: ['/images/2.jpg'],
+        currentImageCollection: 'black&white'
     }
 
     it('should render correctly', () => {
-        const image = {
-                width: 6000,
-                height: 4000,
-                path: '/images/2.jpg',
-                alt: "cityscape"
-        }
         const comp = render(
             <AppContext.Provider value={state}>
-                <CardImage image={image}/>
+                <CardImage image={state.imageList[0]}/>
             </ AppContext.Provider>
         )
 
@@ -26,17 +22,11 @@ describe('Menu', () => {
     })
 
     it('should render correctly in the container', () => {
-        const images = [{
-                width: 6000,
-                height: 4000,
-                path: '/images/2.jpg',
-                alt: "cityscape"
-        }]
-        
+        const {imageList, currentImageCollection} = state
         const comp = render(
             <AppContext.Provider value={state}>
                 <CardContainer>
-                    {images.map((image, el) => (<CardImage image={image} key={el}/>))}
+                    {imageList[currentImageCollection]?.map((image, el) => (<CardImage image={image} key={el}/>))}
                 </CardContainer>
             </ AppContext.Provider>
         )

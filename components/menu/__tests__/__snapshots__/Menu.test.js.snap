@@ -6,18 +6,11 @@ exports[`Menu should render corectly 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="menuContainer false"
+        class="menuContainer"
       >
         <div
           class="menuWrapper"
         >
-          <div
-            class="slideMenuBtn"
-          >
-            <span />
-            <span />
-            <span />
-          </div>
           <div
             class="brandTitle"
           >
@@ -26,84 +19,36 @@ exports[`Menu should render corectly 1`] = `
             </strong>
              Photography
           </div>
-          <div
-            class="container false"
-          >
-            <div
-              class="stopped"
-            >
-              <img
-                alt="stop music icon"
-                data-nimg="1"
-                decoding="async"
-                height="20"
-                loading="lazy"
-                src="/icons/music-stop.svg"
-                style="color: transparent;"
-                width="20"
-              />
-            </div>
-            <audio
-              autoplay=""
-              id="audio"
-              loop=""
-              src="/media/trance1.flac"
-            />
-          </div>
+        </div>
+      </div>
+      <div
+        class="menuDrawerText menuDrawerClosed false"
+      >
+        <div
+          data-id="black&white"
+        >
+          Black & White
         </div>
         <div
-          class="drawer drawerClosed"
+          data-id="landscape"
         >
-          <div
-            class="drawerHeader"
-          >
-            <button
-              class="drawerCloseBtn"
-            >
-              <img
-                alt="close icon"
-                data-nimg="1"
-                decoding="async"
-                height="15"
-                loading="lazy"
-                src="/icons/close.svg"
-                style="color: transparent;"
-                width="15"
-              />
-            </button>
-          </div>
-          <div
-            class="drawerBody"
-          >
-            <div
-              class="drawerItem"
-            >
-              Galery
-            </div>
-            <div
-              class="drawerItem"
-            >
-              Shop
-            </div>
-          </div>
+          Landscape
+        </div>
+        <div
+          data-id="journalism"
+        >
+          Journalism
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="menuContainer false"
+      class="menuContainer"
     >
       <div
         class="menuWrapper"
       >
-        <div
-          class="slideMenuBtn"
-        >
-          <span />
-          <span />
-          <span />
-        </div>
         <div
           class="brandTitle"
         >
@@ -112,66 +57,25 @@ exports[`Menu should render corectly 1`] = `
           </strong>
            Photography
         </div>
-        <div
-          class="container false"
-        >
-          <div
-            class="stopped"
-          >
-            <img
-              alt="stop music icon"
-              data-nimg="1"
-              decoding="async"
-              height="20"
-              loading="lazy"
-              src="/icons/music-stop.svg"
-              style="color: transparent;"
-              width="20"
-            />
-          </div>
-          <audio
-            autoplay=""
-            id="audio"
-            loop=""
-            src="/media/trance1.flac"
-          />
-        </div>
+      </div>
+    </div>
+    <div
+      class="menuDrawerText menuDrawerClosed false"
+    >
+      <div
+        data-id="black&white"
+      >
+        Black & White
       </div>
       <div
-        class="drawer drawerClosed"
+        data-id="landscape"
       >
-        <div
-          class="drawerHeader"
-        >
-          <button
-            class="drawerCloseBtn"
-          >
-            <img
-              alt="close icon"
-              data-nimg="1"
-              decoding="async"
-              height="15"
-              loading="lazy"
-              src="/icons/close.svg"
-              style="color: transparent;"
-              width="15"
-            />
-          </button>
-        </div>
-        <div
-          class="drawerBody"
-        >
-          <div
-            class="drawerItem"
-          >
-            Galery
-          </div>
-          <div
-            class="drawerItem"
-          >
-            Shop
-          </div>
-        </div>
+        Landscape
+      </div>
+      <div
+        data-id="journalism"
+      >
+        Journalism
       </div>
     </div>
   </div>,
@@ -235,18 +139,11 @@ exports[`Menu should render corectly with drawer open 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="menuContainer false"
+        class="menuContainer"
       >
         <div
           class="menuWrapper"
         >
-          <div
-            class="slideMenuBtn"
-          >
-            <span />
-            <span />
-            <span />
-          </div>
           <div
             class="brandTitle"
           >
@@ -255,84 +152,36 @@ exports[`Menu should render corectly with drawer open 1`] = `
             </strong>
              Photography
           </div>
-          <div
-            class="container hideIcon"
-          >
-            <div
-              class="stopped"
-            >
-              <img
-                alt="stop music icon"
-                data-nimg="1"
-                decoding="async"
-                height="20"
-                loading="lazy"
-                src="/icons/music-stop.svg"
-                style="color: transparent;"
-                width="20"
-              />
-            </div>
-            <audio
-              autoplay=""
-              id="audio"
-              loop=""
-              src="/media/trance1.flac"
-            />
-          </div>
+        </div>
+      </div>
+      <div
+        class="menuDrawerText menuDrawerClosed false"
+      >
+        <div
+          data-id="black&white"
+        >
+          Black & White
         </div>
         <div
-          class="drawer drawerOpen"
+          data-id="landscape"
         >
-          <div
-            class="drawerHeader"
-          >
-            <button
-              class="drawerCloseBtn"
-            >
-              <img
-                alt="close icon"
-                data-nimg="1"
-                decoding="async"
-                height="15"
-                loading="lazy"
-                src="/icons/close.svg"
-                style="color: transparent;"
-                width="15"
-              />
-            </button>
-          </div>
-          <div
-            class="drawerBody"
-          >
-            <div
-              class="drawerItem"
-            >
-              Galery
-            </div>
-            <div
-              class="drawerItem"
-            >
-              Shop
-            </div>
-          </div>
+          Landscape
+        </div>
+        <div
+          data-id="journalism"
+        >
+          Journalism
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="menuContainer false"
+      class="menuContainer"
     >
       <div
         class="menuWrapper"
       >
-        <div
-          class="slideMenuBtn"
-        >
-          <span />
-          <span />
-          <span />
-        </div>
         <div
           class="brandTitle"
         >
@@ -341,66 +190,25 @@ exports[`Menu should render corectly with drawer open 1`] = `
           </strong>
            Photography
         </div>
-        <div
-          class="container hideIcon"
-        >
-          <div
-            class="stopped"
-          >
-            <img
-              alt="stop music icon"
-              data-nimg="1"
-              decoding="async"
-              height="20"
-              loading="lazy"
-              src="/icons/music-stop.svg"
-              style="color: transparent;"
-              width="20"
-            />
-          </div>
-          <audio
-            autoplay=""
-            id="audio"
-            loop=""
-            src="/media/trance1.flac"
-          />
-        </div>
+      </div>
+    </div>
+    <div
+      class="menuDrawerText menuDrawerClosed false"
+    >
+      <div
+        data-id="black&white"
+      >
+        Black & White
       </div>
       <div
-        class="drawer drawerOpen"
+        data-id="landscape"
       >
-        <div
-          class="drawerHeader"
-        >
-          <button
-            class="drawerCloseBtn"
-          >
-            <img
-              alt="close icon"
-              data-nimg="1"
-              decoding="async"
-              height="15"
-              loading="lazy"
-              src="/icons/close.svg"
-              style="color: transparent;"
-              width="15"
-            />
-          </button>
-        </div>
-        <div
-          class="drawerBody"
-        >
-          <div
-            class="drawerItem"
-          >
-            Galery
-          </div>
-          <div
-            class="drawerItem"
-          >
-            Shop
-          </div>
-        </div>
+        Landscape
+      </div>
+      <div
+        data-id="journalism"
+      >
+        Journalism
       </div>
     </div>
   </div>,

@@ -5,8 +5,8 @@ const CardImage = ({image, setImageDetails, location}) => {
     return (
         <div className={styles.cardWrapper} onClick={() => setImageDetails && setImageDetails(image)}>
             <Image
-                src={image.path} 
-                alt={image.alt} 
+                src={image} 
+                alt={''} 
                 fill={true}
                 className='image'
             />

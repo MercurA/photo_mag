@@ -12,7 +12,7 @@
 }
 
 .container {
-    margin-top: 100px;
+    margin-top: 200px;
     display: flex;
     flex-flow: wrap;
     position: absolute;
@@ -40,7 +40,7 @@
 
 @media only screen and (max-width: 820px) {
     .container {
-        margin-top: 100px;
+        margin-top: 40px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -66,7 +66,7 @@
 @media only screen and (max-width: 425px) {
 
     .container {
-        margin-top: 100px;
+        margin-top: 40px;
         display: flex;
         flex-flow: wrap;
         position: absolute;
@@ -134,14 +134,6 @@
     justify-content: center;
     z-index: 99;
 }
-
-/* .imageH {
-    width: 55%;
-}
-
-.imageW {
-    width: 94%;
-} */
 
 .imageH > img {
     object-fit: contain;
