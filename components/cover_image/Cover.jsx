@@ -26,6 +26,7 @@ const Cover = ({image}) => {
                         padding: '40px',
                         
                     }}
+                    id='cover_image'
                 />
             </div>
             <div className={styles.effectContainer}>
