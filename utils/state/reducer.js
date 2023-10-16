@@ -8,6 +8,7 @@ export const initialState = {
         'journalism': [],
         'landscape': []
     },
+    currentImageCollection: 'black&white',
     currentImage: '/images/2.png'
 }
 
@@ -16,7 +17,8 @@ export const ACTIONS = {
     drawer: 'drawer',
     setImageDetails: 'setImageDetails',
     setPopupState: 'setPopupState',
-    setCurrentImageToDisplay: 'setCurrentImageToDisplay'
+    setCurrentImageToDisplay: 'setCurrentImageToDisplay',
+    setImageCollection: 'setImageCollection'
 }
 
 export default function reducer (state, action) {
@@ -45,6 +47,11 @@ export default function reducer (state, action) {
             return {
                 ...state,
                 currentImage: action.payload
+            }
+        case ACTIONS.setImageCollection:
+            return {
+                ...state,
+                currentImageCollection: action.payload
             }
         default:
             return state

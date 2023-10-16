@@ -6,6 +6,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: #0b0b0b;
 }
 
 a {
@@ -20,4 +21,5 @@ a {
 .mainContainer {
   display: flex;
   flex-flow: column;
+  background-color: black;
 }

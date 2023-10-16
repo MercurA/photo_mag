@@ -1,11 +1,11 @@
 .container {
     display: inline;
-    position: fixed;
+    position: relative;
     width: 38px;
     height: 38px;
     z-index: 61;
-    top: 24px;
-    right: 0;
+    top: 10px;
+    left: 95%;
     background-color: white;
 }
 
