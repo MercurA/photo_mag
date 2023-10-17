@@ -21,10 +21,15 @@ exports[`Cover component should render correctly 1`] = `
           />
         </div>
         <div
-          class="effectContainer"
+          class="container"
         >
           <div
-            class="blur"
+            class="brand"
+          >
+            HC
+          </div>
+          <div
+            class="categoryGroup"
           >
             <div
               class="text textUnblur"
@@ -49,8 +54,63 @@ exports[`Cover component should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="blur"
-          />
+            class="contact"
+          >
+            <p>
+              constandacheh@gmail.com
+            </p>
+            <div>
+              <a
+                class="link"
+                href="https://www.instagram.com/cypher_mercurius/"
+                target="_blank"
+              >
+                <img
+                  alt="instagram logo"
+                  data-nimg="1"
+                  decoding="async"
+                  height="20"
+                  loading="lazy"
+                  src="/icons/insta_white.svg"
+                  style="color: transparent;"
+                  width="20"
+                />
+              </a>
+              <a
+                class="link"
+                href="https://github.com/MercurA"
+                target="_blank"
+              >
+                <img
+                  alt="github logo"
+                  data-nimg="1"
+                  decoding="async"
+                  height="20"
+                  loading="lazy"
+                  src="/icons/github_white.svg"
+                  style="color: transparent;"
+                  width="20"
+                />
+              </a>
+              <a
+                class="link"
+                href="https://soundcloud.com/dionis5"
+                target="_blank"
+              >
+                <img
+                  alt="github logo"
+                  data-nimg="1"
+                  decoding="async"
+                  height="20"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ficons%2Fsoundcloud.jpg&w=48&q=75"
+                  srcset="/_next/image?url=%2Ficons%2Fsoundcloud.jpg&w=32&q=75 1x, /_next/image?url=%2Ficons%2Fsoundcloud.jpg&w=48&q=75 2x"
+                  style="color: transparent;"
+                  width="20"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -72,10 +132,15 @@ exports[`Cover component should render correctly 1`] = `
         />
       </div>
       <div
-        class="effectContainer"
+        class="container"
       >
         <div
-          class="blur"
+          class="brand"
+        >
+          HC
+        </div>
+        <div
+          class="categoryGroup"
         >
           <div
             class="text textUnblur"
@@ -100,8 +165,63 @@ exports[`Cover component should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="blur"
-        />
+          class="contact"
+        >
+          <p>
+            constandacheh@gmail.com
+          </p>
+          <div>
+            <a
+              class="link"
+              href="https://www.instagram.com/cypher_mercurius/"
+              target="_blank"
+            >
+              <img
+                alt="instagram logo"
+                data-nimg="1"
+                decoding="async"
+                height="20"
+                loading="lazy"
+                src="/icons/insta_white.svg"
+                style="color: transparent;"
+                width="20"
+              />
+            </a>
+            <a
+              class="link"
+              href="https://github.com/MercurA"
+              target="_blank"
+            >
+              <img
+                alt="github logo"
+                data-nimg="1"
+                decoding="async"
+                height="20"
+                loading="lazy"
+                src="/icons/github_white.svg"
+                style="color: transparent;"
+                width="20"
+              />
+            </a>
+            <a
+              class="link"
+              href="https://soundcloud.com/dionis5"
+              target="_blank"
+            >
+              <img
+                alt="github logo"
+                data-nimg="1"
+                decoding="async"
+                height="20"
+                loading="lazy"
+                src="/_next/image?url=%2Ficons%2Fsoundcloud.jpg&w=48&q=75"
+                srcset="/_next/image?url=%2Ficons%2Fsoundcloud.jpg&w=32&q=75 1x, /_next/image?url=%2Ficons%2Fsoundcloud.jpg&w=48&q=75 2x"
+                style="color: transparent;"
+                width="20"
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>,
