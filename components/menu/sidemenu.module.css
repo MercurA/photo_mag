@@ -1,0 +1,51 @@
+.container {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.categoryGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.brand {
+    color: #FFF;
+    margin-top: 40px;
+}
+
+.text {
+    color: white;
+    filter: blur(4px);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 500ms ease-in;
+}
+
+.textUnblur {
+    filter: blur(0) !important;
+}
+
+.text:hover {
+    filter: blur(0);
+    transition: 500ms ease-out;
+}
+
+.contact {
+    color: #FFF;
+    margin-bottom: 40px;
+    z-index: 90;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.link {
+    margin: 5px;
+}
