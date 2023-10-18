@@ -5,9 +5,17 @@ import { AppContext } from '../../pages'
 import MusicContainer from '../music/MusicContainer'
 import { strings } from '../../utils/constants'
 import { ACTIONS } from '../../utils/state/reducer'
+import Drawer from './Drawer'
 
 const Menu = ({ dispatch }) => {
     const context = useContext(AppContext)
+
+    const { isDrawerOpen, isPopupOn } = context
+
+    const handleDrawer = () => {
+        dispatch({ type: ACTIONS.drawer })
+    }
+
     const [open, setOpen] = useState(false)
 
     const handleOpen = () => {
@@ -24,18 +32,19 @@ const Menu = ({ dispatch }) => {
 
     return (
         <>
-            <div className={styles.menuContainer} onClick={handleOpen}>
+            <div className={`${styles.menuContainer} ${isPopupOn && styles.hideMenu}`}>
                 <div className={styles.menuWrapper} >
+                    <div className={styles.slideMenuBtn} onClick={handleDrawer}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <div className={styles.brandTitle}>
                         <strong>{"Horea's"}</strong> Photography
                     </div>
                     {/* <MusicContainer dispatch={dispatch} /> */}
                 </div>
-            </div>
-            <div className={`${styles.menuDrawerText} ${styles.menuDrawerClosed} ${open && styles.menuDrawerOpen}`}>
-                {strings.selections.map((el, i) => (
-                    <div key={i} data-id={el.id} onClick={handleMenuSelection}>{el.name}</div>
-                ))}
+                <Drawer isOpen={isDrawerOpen} handleDrawer={handleDrawer} handleMenuSelection={handleMenuSelection}/>
             </div>
         </>
     )

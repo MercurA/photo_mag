@@ -1,15 +1,40 @@
 export const initialState = {
     music: false,
     isDrawerOpen: false,
-    image: null,
     isPopupOn: false,
     imageList: {
-        'black&white' : ['/images/1.jpg','/images/2.png','/images/3.jpg','/images/4.jpg','/images/5.png'],
+        'black&white': [
+            {
+                path: '/images/1.jpg',
+                width: 6016,
+                height: 4016
+            },
+            {
+                path: '/images/2.png',
+                width: 6016,
+                height: 4016
+            },
+            {
+                path: '/images/3.jpg',
+                width: 6016,
+                height: 4016
+            },
+            {
+                path: '/images/4.jpg',
+                width: 6016,
+                height: 4016
+            },
+            {
+                path: '/images/5.png',
+                width: 4016,
+                height: 6016
+            }
+        ],
         'journalism': [],
         'landscape': []
     },
     currentImageCollection: 'black&white',
-    currentImage: '/images/2.png'
+    currentImage: null
 }
 
 export const ACTIONS = {
@@ -21,7 +46,7 @@ export const ACTIONS = {
     setImageCollection: 'setImageCollection'
 }
 
-export default function reducer (state, action) {
+export default function reducer(state, action) {
     switch (action.type) {
         case ACTIONS.music:
             return {
@@ -36,7 +61,7 @@ export default function reducer (state, action) {
         case ACTIONS.setImageDetails:
             return {
                 ...state,
-                image: action.payload
+                currentImage: action.payload
             }
         case ACTIONS.setPopupState:
             return {

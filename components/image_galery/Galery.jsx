@@ -60,7 +60,7 @@ const Galery = ({ dispatch }) => {
                 {items?.map((image, index) => (
                     <div className={styles.item} key={index} ref={itemRef}>
                         <Image
-                            src={image}
+                            src={image.path}
                             alt={''}
                             fill={true}
                             className='image'

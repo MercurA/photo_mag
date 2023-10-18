@@ -3,7 +3,7 @@
     height: 70px;
     display: flex;
     align-items: center;
-    position: relative;
+    position: fixed;
     background-color: #0b0b0b;
     z-index: 60;
     flex-flow: column;
@@ -42,12 +42,12 @@
 
 .slideMenuBtn span {
     width: 35px;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 .slideMenuBtn span:nth-child(2) {
     width: 40px;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 /* Drawer */
@@ -64,6 +64,9 @@
     display: flex;
     flex-direction: column;
     max-width: 38.75rem;
+    background-color: #0b0b0b;
+    display: flex;
+    justify-content: space-between;
 }
 
 .drawerOpen{
@@ -79,7 +82,6 @@
     flex-direction: column;
     margin: 1rem 0;
     padding: 0 1.25rem;
-    height: 200px;
 }
 
 .drawerBody {
@@ -91,7 +93,7 @@
     justify-content: space-evenly;
     font-family: 'EB Garamond', serif;
     font-size: 2rem;
-    font-display: swap
+    color: white;
 }
 
 .drawerCloseBtn {
@@ -104,6 +106,23 @@
     align-items: center;
     border: 1px;
     cursor: pointer;
+}
+
+.drawerItem {
+    margin: 20px;
+}
+
+.drawerFooter {
+    color: #FFF;
+    margin-bottom: 40px;
+    z-index: 90;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.link {
+    margin: 5px;
 }
 
 /* Media */

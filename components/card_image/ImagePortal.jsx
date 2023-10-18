@@ -9,12 +9,11 @@ import { ACTIONS } from "../../utils/state/reducer"
 const ImagePortal = ({dispatch}) => {
     const context = useContext(AppContext)
     const [imageClass, setImageClass] = useState()
-
-    const {image} = context
+    const {currentImage} = context
 
     useEffect(() => {
         function detectTypeOfImage() {
-            if(image.width > image.height) {
+            if(currentImage.width > currentImage.height) {
                 setImageClass(styles.imageW)
             } else {
                 setImageClass(styles.imageH)
@@ -24,7 +23,7 @@ const ImagePortal = ({dispatch}) => {
     }, [imageClass])
 
     const disableImagePopUp = () => {
-        if(image !== null) {
+        if(currentImage !== null) {
             dispatch({
                 type: ACTIONS.setImageDetails,
                 payload: null
@@ -41,7 +40,7 @@ const ImagePortal = ({dispatch}) => {
         return (
             <div className={styles.imagePopContainer}>
                 <div className={imageClass} onClick={disableImagePopUp}>
-                    <Image src={image.path} fill alt=""/>
+                    <Image src={currentImage.path} fill alt=""/>
                 </div>
             </div>
         )
@@ -49,7 +48,7 @@ const ImagePortal = ({dispatch}) => {
 
     return (
         <div>
-            {image && createPortal(createImagePop(), document.body)}
+            {currentImage && createPortal(createImagePop(), document?.body)}
         </div>
     )
 }
