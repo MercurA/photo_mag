@@ -6,11 +6,18 @@ exports[`Menu should render corectly 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="menuContainer"
+        class="menuContainer false"
       >
         <div
           class="menuWrapper"
         >
+          <div
+            class="slideMenuBtn"
+          >
+            <span />
+            <span />
+            <span />
+          </div>
           <div
             class="brandTitle"
           >
@@ -20,35 +27,125 @@ exports[`Menu should render corectly 1`] = `
              Photography
           </div>
         </div>
-      </div>
-      <div
-        class="menuDrawerText menuDrawerClosed false"
-      >
         <div
-          data-id="black&white"
+          class="drawer drawerClosed"
         >
-          Black & White
-        </div>
-        <div
-          data-id="landscape"
-        >
-          Landscape
-        </div>
-        <div
-          data-id="journalism"
-        >
-          Journalism
+          <div
+            class="drawerHeader"
+          >
+            <button
+              class="drawerCloseBtn"
+            >
+              <img
+                alt="close icon"
+                data-nimg="1"
+                decoding="async"
+                height="15"
+                loading="lazy"
+                src="/icons/close.svg"
+                style="color: transparent;"
+                width="15"
+              />
+            </button>
+          </div>
+          <div
+            class="drawerBody"
+          >
+            <div
+              class="drawerItem"
+              data-id="black&white"
+            >
+              Black & White
+            </div>
+            <div
+              class="drawerItem"
+              data-id="landscape"
+            >
+              Landscape
+            </div>
+            <div
+              class="drawerItem"
+              data-id="journalism"
+            >
+              Journalism
+            </div>
+          </div>
+          <div
+            class="drawerFooter"
+          >
+            <p>
+              constandacheh@gmail.com
+            </p>
+            <div>
+              <a
+                class="link"
+                href="https://www.instagram.com/cypher_mercurius/"
+                target="_blank"
+              >
+                <img
+                  alt="instagram logo"
+                  data-nimg="1"
+                  decoding="async"
+                  height="20"
+                  loading="lazy"
+                  src="/icons/insta_white.svg"
+                  style="color: transparent;"
+                  width="20"
+                />
+              </a>
+              <a
+                class="link"
+                href="https://github.com/MercurA"
+                target="_blank"
+              >
+                <img
+                  alt="github logo"
+                  data-nimg="1"
+                  decoding="async"
+                  height="20"
+                  loading="lazy"
+                  src="/icons/github_white.svg"
+                  style="color: transparent;"
+                  width="20"
+                />
+              </a>
+              <a
+                class="link"
+                href="https://soundcloud.com/dionis5"
+                target="_blank"
+              >
+                <img
+                  alt="github logo"
+                  data-nimg="1"
+                  decoding="async"
+                  height="20"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ficons%2Fsoundcloud.jpg&w=48&q=75"
+                  srcset="/_next/image?url=%2Ficons%2Fsoundcloud.jpg&w=32&q=75 1x, /_next/image?url=%2Ficons%2Fsoundcloud.jpg&w=48&q=75 2x"
+                  style="color: transparent;"
+                  width="20"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="menuContainer"
+      class="menuContainer false"
     >
       <div
         class="menuWrapper"
       >
+        <div
+          class="slideMenuBtn"
+        >
+          <span />
+          <span />
+          <span />
+        </div>
         <div
           class="brandTitle"
         >
@@ -58,24 +155,107 @@ exports[`Menu should render corectly 1`] = `
            Photography
         </div>
       </div>
-    </div>
-    <div
-      class="menuDrawerText menuDrawerClosed false"
-    >
       <div
-        data-id="black&white"
+        class="drawer drawerClosed"
       >
-        Black & White
-      </div>
-      <div
-        data-id="landscape"
-      >
-        Landscape
-      </div>
-      <div
-        data-id="journalism"
-      >
-        Journalism
+        <div
+          class="drawerHeader"
+        >
+          <button
+            class="drawerCloseBtn"
+          >
+            <img
+              alt="close icon"
+              data-nimg="1"
+              decoding="async"
+              height="15"
+              loading="lazy"
+              src="/icons/close.svg"
+              style="color: transparent;"
+              width="15"
+            />
+          </button>
+        </div>
+        <div
+          class="drawerBody"
+        >
+          <div
+            class="drawerItem"
+            data-id="black&white"
+          >
+            Black & White
+          </div>
+          <div
+            class="drawerItem"
+            data-id="landscape"
+          >
+            Landscape
+          </div>
+          <div
+            class="drawerItem"
+            data-id="journalism"
+          >
+            Journalism
+          </div>
+        </div>
+        <div
+          class="drawerFooter"
+        >
+          <p>
+            constandacheh@gmail.com
+          </p>
+          <div>
+            <a
+              class="link"
+              href="https://www.instagram.com/cypher_mercurius/"
+              target="_blank"
+            >
+              <img
+                alt="instagram logo"
+                data-nimg="1"
+                decoding="async"
+                height="20"
+                loading="lazy"
+                src="/icons/insta_white.svg"
+                style="color: transparent;"
+                width="20"
+              />
+            </a>
+            <a
+              class="link"
+              href="https://github.com/MercurA"
+              target="_blank"
+            >
+              <img
+                alt="github logo"
+                data-nimg="1"
+                decoding="async"
+                height="20"
+                loading="lazy"
+                src="/icons/github_white.svg"
+                style="color: transparent;"
+                width="20"
+              />
+            </a>
+            <a
+              class="link"
+              href="https://soundcloud.com/dionis5"
+              target="_blank"
+            >
+              <img
+                alt="github logo"
+                data-nimg="1"
+                decoding="async"
+                height="20"
+                loading="lazy"
+                src="/_next/image?url=%2Ficons%2Fsoundcloud.jpg&w=48&q=75"
+                srcset="/_next/image?url=%2Ficons%2Fsoundcloud.jpg&w=32&q=75 1x, /_next/image?url=%2Ficons%2Fsoundcloud.jpg&w=48&q=75 2x"
+                style="color: transparent;"
+                width="20"
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>,
@@ -139,11 +319,18 @@ exports[`Menu should render corectly with drawer open 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="menuContainer"
+        class="menuContainer false"
       >
         <div
           class="menuWrapper"
         >
+          <div
+            class="slideMenuBtn"
+          >
+            <span />
+            <span />
+            <span />
+          </div>
           <div
             class="brandTitle"
           >
@@ -153,35 +340,125 @@ exports[`Menu should render corectly with drawer open 1`] = `
              Photography
           </div>
         </div>
-      </div>
-      <div
-        class="menuDrawerText menuDrawerClosed false"
-      >
         <div
-          data-id="black&white"
+          class="drawer drawerOpen"
         >
-          Black & White
-        </div>
-        <div
-          data-id="landscape"
-        >
-          Landscape
-        </div>
-        <div
-          data-id="journalism"
-        >
-          Journalism
+          <div
+            class="drawerHeader"
+          >
+            <button
+              class="drawerCloseBtn"
+            >
+              <img
+                alt="close icon"
+                data-nimg="1"
+                decoding="async"
+                height="15"
+                loading="lazy"
+                src="/icons/close.svg"
+                style="color: transparent;"
+                width="15"
+              />
+            </button>
+          </div>
+          <div
+            class="drawerBody"
+          >
+            <div
+              class="drawerItem"
+              data-id="black&white"
+            >
+              Black & White
+            </div>
+            <div
+              class="drawerItem"
+              data-id="landscape"
+            >
+              Landscape
+            </div>
+            <div
+              class="drawerItem"
+              data-id="journalism"
+            >
+              Journalism
+            </div>
+          </div>
+          <div
+            class="drawerFooter"
+          >
+            <p>
+              constandacheh@gmail.com
+            </p>
+            <div>
+              <a
+                class="link"
+                href="https://www.instagram.com/cypher_mercurius/"
+                target="_blank"
+              >
+                <img
+                  alt="instagram logo"
+                  data-nimg="1"
+                  decoding="async"
+                  height="20"
+                  loading="lazy"
+                  src="/icons/insta_white.svg"
+                  style="color: transparent;"
+                  width="20"
+                />
+              </a>
+              <a
+                class="link"
+                href="https://github.com/MercurA"
+                target="_blank"
+              >
+                <img
+                  alt="github logo"
+                  data-nimg="1"
+                  decoding="async"
+                  height="20"
+                  loading="lazy"
+                  src="/icons/github_white.svg"
+                  style="color: transparent;"
+                  width="20"
+                />
+              </a>
+              <a
+                class="link"
+                href="https://soundcloud.com/dionis5"
+                target="_blank"
+              >
+                <img
+                  alt="github logo"
+                  data-nimg="1"
+                  decoding="async"
+                  height="20"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ficons%2Fsoundcloud.jpg&w=48&q=75"
+                  srcset="/_next/image?url=%2Ficons%2Fsoundcloud.jpg&w=32&q=75 1x, /_next/image?url=%2Ficons%2Fsoundcloud.jpg&w=48&q=75 2x"
+                  style="color: transparent;"
+                  width="20"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="menuContainer"
+      class="menuContainer false"
     >
       <div
         class="menuWrapper"
       >
+        <div
+          class="slideMenuBtn"
+        >
+          <span />
+          <span />
+          <span />
+        </div>
         <div
           class="brandTitle"
         >
@@ -191,24 +468,107 @@ exports[`Menu should render corectly with drawer open 1`] = `
            Photography
         </div>
       </div>
-    </div>
-    <div
-      class="menuDrawerText menuDrawerClosed false"
-    >
       <div
-        data-id="black&white"
+        class="drawer drawerOpen"
       >
-        Black & White
-      </div>
-      <div
-        data-id="landscape"
-      >
-        Landscape
-      </div>
-      <div
-        data-id="journalism"
-      >
-        Journalism
+        <div
+          class="drawerHeader"
+        >
+          <button
+            class="drawerCloseBtn"
+          >
+            <img
+              alt="close icon"
+              data-nimg="1"
+              decoding="async"
+              height="15"
+              loading="lazy"
+              src="/icons/close.svg"
+              style="color: transparent;"
+              width="15"
+            />
+          </button>
+        </div>
+        <div
+          class="drawerBody"
+        >
+          <div
+            class="drawerItem"
+            data-id="black&white"
+          >
+            Black & White
+          </div>
+          <div
+            class="drawerItem"
+            data-id="landscape"
+          >
+            Landscape
+          </div>
+          <div
+            class="drawerItem"
+            data-id="journalism"
+          >
+            Journalism
+          </div>
+        </div>
+        <div
+          class="drawerFooter"
+        >
+          <p>
+            constandacheh@gmail.com
+          </p>
+          <div>
+            <a
+              class="link"
+              href="https://www.instagram.com/cypher_mercurius/"
+              target="_blank"
+            >
+              <img
+                alt="instagram logo"
+                data-nimg="1"
+                decoding="async"
+                height="20"
+                loading="lazy"
+                src="/icons/insta_white.svg"
+                style="color: transparent;"
+                width="20"
+              />
+            </a>
+            <a
+              class="link"
+              href="https://github.com/MercurA"
+              target="_blank"
+            >
+              <img
+                alt="github logo"
+                data-nimg="1"
+                decoding="async"
+                height="20"
+                loading="lazy"
+                src="/icons/github_white.svg"
+                style="color: transparent;"
+                width="20"
+              />
+            </a>
+            <a
+              class="link"
+              href="https://soundcloud.com/dionis5"
+              target="_blank"
+            >
+              <img
+                alt="github logo"
+                data-nimg="1"
+                decoding="async"
+                height="20"
+                loading="lazy"
+                src="/_next/image?url=%2Ficons%2Fsoundcloud.jpg&w=48&q=75"
+                srcset="/_next/image?url=%2Ficons%2Fsoundcloud.jpg&w=32&q=75 1x, /_next/image?url=%2Ficons%2Fsoundcloud.jpg&w=48&q=75 2x"
+                style="color: transparent;"
+                width="20"
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>,

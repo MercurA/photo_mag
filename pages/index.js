@@ -1,14 +1,10 @@
 import { createContext, useEffect, useReducer } from "react"
 import Head from "next/head"
-import { useRouter } from "next/router"
 
 import reducer, { initialState } from "../utils/state/reducer"
-import Cover from '../components/cover_image/Cover'
 import { strings } from "../utils/constants"
-import Galery from "../components/image_galery/Galery"
-import CardContainer from '../components/card_image/CardContainer'
-import ImagePortal from '../components/card_image/ImagePortal'
-import Menu from "../components/menu/Menu"
+import DesktopContainer from "../containers/DesktopContainer"
+import MobileContainer from "../containers/MobileContainer"
 
 export const AppContext = createContext(null)
 
@@ -31,20 +27,6 @@ const Home = ({ isMobileDevice }) => {
     }
   }, [state.isPopupOn])
 
-  const renderForMobiles = () => (
-    <>
-      <Menu dispatch={dispatch} />
-      <CardContainer dispatch={dispatch} />
-      {state.image && <ImagePortal dispatch={dispatch} />}
-    </>
-  )
-
-  const renderForPC = () => (
-    <>
-      <Galery dispatch={dispatch} />
-      <Cover image={state?.currentImage} />
-    </>
-  )
 
   return (
     <AppContext.Provider value={state}>
@@ -53,7 +35,7 @@ const Home = ({ isMobileDevice }) => {
         <meta name="home page" content="Photo galery" />
         <meta name="keywords" content="photos, photography, hi-res, galery" />
       </Head>
-      {isMobileDevice ? renderForMobiles() : renderForPC()}
+      {isMobileDevice ? <MobileContainer dispatch={dispatch} /> : <DesktopContainer dispatch={dispatch} />}
     </AppContext.Provider>
   )
 }
