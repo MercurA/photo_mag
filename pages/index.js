@@ -1,5 +1,6 @@
 import { createContext, useEffect, useReducer } from "react"
 import Head from "next/head"
+import { Analytics } from '@vercel/analytics/react';
 
 import reducer, { initialState } from "../utils/state/reducer"
 import { strings } from "../utils/constants"
@@ -36,6 +37,7 @@ const Home = ({ isMobileDevice }) => {
         <meta name="keywords" content="photos, photography, hi-res, galery" />
       </Head>
       {isMobileDevice ? <MobileContainer /> : <DesktopContainer />}
+      <Analytics />
     </AppContext.Provider>
   )
 }
