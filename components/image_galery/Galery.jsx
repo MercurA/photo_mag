@@ -4,9 +4,10 @@ import { AppContext } from '../../pages'
 import Image from 'next/image'
 import { ACTIONS } from '../../utils/state/reducer'
 
-const Galery = ({ dispatch }) => {
+const Galery = () => {
     const context = useContext(AppContext)
-    const { imageList, currentImageCollection } = context
+    const { imageList, currentImageCollection, dispatch } = context
+    
     const scrollContainerRef = useRef(null)
     const itemRef = useRef(null)
     const [items, setItems] = useState(imageList[currentImageCollection])

@@ -8,7 +8,7 @@ import { ACTIONS } from '../../utils/state/reducer'
 
 const SideMenu = () => {
     const context = useContext(AppContext)
-    const {dispatch} = context
+    const { dispatch } = context
     const [selected, setSelected] = useState(0)
 
     const classStyleBlur = index => selected === index ? styles.textUnblur : ''
@@ -36,7 +36,7 @@ const SideMenu = () => {
                 ))}
             </div>
             <div className={styles.contact}>
-                <p>constandacheh@gmail.com</p>
+                <p>{strings.email}</p>
                 <div>
                     <Link className={styles.link} href={'https://www.instagram.com/cypher_mercurius/'} target="_blank">
                         <Image src={'/icons/insta_white.svg'} alt="instagram logo" width={20} height={20} />

@@ -16,6 +16,6 @@ export const strings = {
         },
     ],
     misc: {
-        commingsoon: "Comming Soon!"
+        commingsoon: "Coming Soon!"
     }
 }

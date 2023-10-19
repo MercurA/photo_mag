@@ -21,7 +21,7 @@ const DesktopContainer = ({ dispatch }) => {
 
     return (
         <>
-            <Galery dispatch={dispatch} />
+            <Galery />
             <Cover image={context?.currentImage}/>
         </>
     )

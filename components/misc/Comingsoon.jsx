@@ -1,9 +1,13 @@
+import { useContext } from "react"
+import { AppContext } from "../../pages"
 import { strings } from "../../utils/constants"
 import styles from './misc.module.css'
 
 const Comingsoon = () => {
+    const context = useContext(AppContext)
+
     return (
-        <div className={styles.commingSoon}>{strings.misc.commingsoon}</div>
+        <div className={`${context?.isMobileDevice ? styles.commingSoonMobile : styles.commingSoonDesktop}`}>{strings.misc.commingsoon}</div>
     )
 }
 
