@@ -1,5 +1,6 @@
 export const strings = {
     title: "Horea's Photography",
+    email: 'constandacheh@gmail.com',
     selections: [
         {
             name: 'Black & White',
@@ -13,5 +14,8 @@ export const strings = {
             name: 'Journalism',
             id: 'journalism'
         },
-    ]
+    ],
+    misc: {
+        commingsoon: "Coming Soon!"
+    }
 }

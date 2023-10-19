@@ -74,10 +74,20 @@ export default function reducer(state, action) {
                 currentImage: action.payload
             }
         case ACTIONS.setImageCollection:
-            return {
-                ...state,
-                currentImageCollection: action.payload
+            if(!state.imageList[action.payload].length) {
+               return {
+                    ...state,
+                    currentImageCollection: action.payload,
+                    currentImage: null
+                }
+            } else {
+                return {
+                    ...state,
+                    currentImageCollection: action.payload,
+                    currentImage: state.imageList[action.payload][2]
+                }
             }
+
         default:
             return state
     }

@@ -6,14 +6,14 @@ import { AppContext } from "../../pages"
 import styles from './cardImage.module.css'
 import { ACTIONS } from "../../utils/state/reducer"
 
-const ImagePortal = ({dispatch}) => {
+const ImagePortal = () => {
     const context = useContext(AppContext)
     const [imageClass, setImageClass] = useState()
-    const {currentImage} = context
+    const { currentImage, dispatch } = context
 
     useEffect(() => {
         function detectTypeOfImage() {
-            if(currentImage.width > currentImage.height) {
+            if (currentImage.width > currentImage.height) {
                 setImageClass(styles.imageW)
             } else {
                 setImageClass(styles.imageH)
@@ -23,7 +23,7 @@ const ImagePortal = ({dispatch}) => {
     }, [imageClass])
 
     const disableImagePopUp = () => {
-        if(currentImage !== null) {
+        if (currentImage !== null) {
             dispatch({
                 type: ACTIONS.setImageDetails,
                 payload: null
@@ -31,16 +31,16 @@ const ImagePortal = ({dispatch}) => {
             dispatch({
                 type: ACTIONS.setPopupState,
                 payload: false
-            }) 
+            })
         }
     }
-    
+
 
     const createImagePop = () => {
         return (
             <div className={styles.imagePopContainer}>
                 <div className={imageClass} onClick={disableImagePopUp}>
-                    <Image src={currentImage.path} fill alt=""/>
+                    <Image src={currentImage.path} fill alt="" />
                 </div>
             </div>
         )

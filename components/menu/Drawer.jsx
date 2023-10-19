@@ -18,7 +18,7 @@ const Drawer = ({ isOpen, handleDrawer, handleMenuSelection }) => {
                 ))}
             </div>
             <div className={styles.drawerFooter}>
-            <p>constandacheh@gmail.com</p>
+            <p>{strings.email}</p>
                 <div>
                     <Link className={styles.link} href={'https://www.instagram.com/cypher_mercurius/'} target="_blank">
                         <Image src={'/icons/insta_white.svg'} alt="instagram logo" width={20} height={20} />

@@ -4,15 +4,18 @@ import CardContainer from '../components/card_image/CardContainer'
 import ImagePortal from '../components/card_image/ImagePortal'
 import Menu from "../components/menu/Menu"
 import { AppContext } from '../pages'
+import Comingsoon from '../components/misc/Comingsoon'
 
-const MobileContainer = ({dispatch}) => {
+const MobileContainer = () => {
     const context = useContext(AppContext)
     
+    const {currentImage, imageList, currentImageCollection} = context
+
     return (
         <>
-            <Menu dispatch={dispatch} />
-            <CardContainer dispatch={dispatch} />
-            {context.currentImage ? <ImagePortal dispatch={dispatch} /> : null}
+            <Menu />
+            {imageList[currentImageCollection].length ? <CardContainer /> : <Comingsoon /> }
+            {currentImage ? <ImagePortal /> : null}
         </>
     )
 }

@@ -4,10 +4,10 @@ import CardImage from './CardImage'
 import styles from './cardImage.module.css'
 import { AppContext } from '../../pages'
 
-const CardContainer = ({dispatch}) => {
+const CardContainer = () => {
     const context = useContext(AppContext)
 
-    const {imageList, currentImageCollection} = context
+    const {imageList, currentImageCollection, dispatch} = context
 
     const setImageDetails = (image) => {
         dispatch({

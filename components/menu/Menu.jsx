@@ -7,27 +7,26 @@ import { strings } from '../../utils/constants'
 import { ACTIONS } from '../../utils/state/reducer'
 import Drawer from './Drawer'
 
-const Menu = ({ dispatch }) => {
+const Menu = () => {
     const context = useContext(AppContext)
 
-    const { isDrawerOpen, isPopupOn } = context
+    const { isDrawerOpen, isPopupOn, dispatch } = context
 
     const handleDrawer = () => {
         dispatch({ type: ACTIONS.drawer })
     }
 
-    const [open, setOpen] = useState(false)
-
-    const handleOpen = () => {
-        setOpen(!open)
-    }
-
+    
     const handleMenuSelection = (e) => {
         dispatch({
             type: ACTIONS.setImageCollection,
             payload: e.target.dataset.id
         })
-        setOpen(false)
+        dispatch({
+            type: ACTIONS.setCurrentImageToDisplay,
+            payload: null
+        })
+        dispatch({ type: ACTIONS.drawer })
     }
 
     return (
