@@ -5,9 +5,8 @@ import Cover from '../components/cover_image/Cover'
 import { AppContext } from "../pages"
 import { ACTIONS } from "../utils/state/reducer"
 
-const DesktopContainer = ({dispatch}) => {
+const DesktopContainer = ({ dispatch }) => {
     const context = useContext(AppContext)
-
 
     useEffect(() => {
         dispatch({
@@ -18,13 +17,13 @@ const DesktopContainer = ({dispatch}) => {
                 height: 4016
             },
         })
-    },[])
+    }, [])
 
     return (
         <>
-        <Galery dispatch={dispatch} />
-        <Cover image={context?.currentImage} />
-      </>
+            <Galery dispatch={dispatch} />
+            <Cover image={context?.currentImage}/>
+        </>
     )
 }
 

@@ -29,7 +29,7 @@ const Home = ({ isMobileDevice }) => {
 
 
   return (
-    <AppContext.Provider value={state}>
+    <AppContext.Provider value={{...state, dispatch}}>
       <Head>
         <title>{strings.title}</title>
         <meta name="home page" content="Photo galery" />

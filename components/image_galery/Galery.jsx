@@ -6,10 +6,15 @@ import { ACTIONS } from '../../utils/state/reducer'
 
 const Galery = ({ dispatch }) => {
     const context = useContext(AppContext)
-    const { imageList } = context
+    const { imageList, currentImageCollection } = context
     const scrollContainerRef = useRef(null)
     const itemRef = useRef(null)
-    const [items, setItems] = useState(imageList['black&white'])
+    const [items, setItems] = useState(imageList[currentImageCollection])
+
+    useEffect(() => {
+        setItems(imageList[currentImageCollection])
+    },[currentImageCollection])
+
 
     useEffect(() => {
         const current = scrollContainerRef.current

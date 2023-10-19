@@ -1,13 +1,14 @@
 import Image from 'next/image';
 import styles from './cover.module.css'
 import SideMenu from '../menu/SideMenu';
+import Comingsoon from '../misc/Comingsoon';
 
 const Cover = ({image}) => {
 
     return (
         <div className={styles.container}>
             <div className={styles.effect}>
-                <Image 
+                {image ? <Image 
                     src={image?.path} 
                     fill 
                     sizes="(max-width: 1024px) 70vw , 100vw" 
@@ -18,9 +19,9 @@ const Cover = ({image}) => {
                         
                     }}
                     id='cover_image'
-                />
+                /> : <Comingsoon />}
             </div>
-            <SideMenu />
+            <SideMenu/>
         </div>
     )
 }
