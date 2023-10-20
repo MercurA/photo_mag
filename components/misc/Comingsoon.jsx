@@ -7,7 +7,7 @@ const Comingsoon = () => {
     const context = useContext(AppContext)
 
     return (
-        <div className={`${context?.isMobileDevice ? styles.commingSoonMobile : styles.commingSoonDesktop}`}>{strings.misc.commingsoon}</div>
+        <div id="comingsoon" className={`${context?.isMobileDevice ? styles.commingSoonMobile : styles.commingSoonDesktop}`}>{strings.misc.commingsoon}</div>
     )
 }
 

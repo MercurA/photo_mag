@@ -32,6 +32,7 @@ const SideMenu = () => {
                         key={index}
                         data-index={index}
                         data-id={el.id}
+                        id={el.id}
                     >{el.name}</div>
                 ))}
             </div>

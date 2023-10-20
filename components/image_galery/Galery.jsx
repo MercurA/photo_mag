@@ -61,6 +61,7 @@ const Galery = () => {
             <div
                 ref={scrollContainerRef}
                 className={styles.container}
+                id="galery"
             >   
                 <div className={styles.focus}></div>
                 {items?.map((image, index) => (
