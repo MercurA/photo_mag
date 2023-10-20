@@ -38,6 +38,7 @@ exports[`Cover component should render correctly 1`] = `
               class="text textUnblur"
               data-id="black&white"
               data-index="0"
+              id="black&white"
             >
               Black & White
             </div>
@@ -45,6 +46,7 @@ exports[`Cover component should render correctly 1`] = `
               class="text "
               data-id="landscape"
               data-index="1"
+              id="landscape"
             >
               Landscape
             </div>
@@ -52,6 +54,7 @@ exports[`Cover component should render correctly 1`] = `
               class="text "
               data-id="journalism"
               data-index="2"
+              id="journalism"
             >
               Journalism
             </div>
@@ -152,6 +155,7 @@ exports[`Cover component should render correctly 1`] = `
             class="text textUnblur"
             data-id="black&white"
             data-index="0"
+            id="black&white"
           >
             Black & White
           </div>
@@ -159,6 +163,7 @@ exports[`Cover component should render correctly 1`] = `
             class="text "
             data-id="landscape"
             data-index="1"
+            id="landscape"
           >
             Landscape
           </div>
@@ -166,6 +171,7 @@ exports[`Cover component should render correctly 1`] = `
             class="text "
             data-id="journalism"
             data-index="2"
+            id="journalism"
           >
             Journalism
           </div>
