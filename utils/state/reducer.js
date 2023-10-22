@@ -5,12 +5,12 @@ export const initialState = {
     imageList: {
         'black&white': [
             {
-                path: '/images/1.jpg',
+                path: '/images/arh_1.jpg',
                 width: 6016,
                 height: 4016
             },
             {
-                path: '/images/2.png',
+                path: '/images/arh_2.jpg',
                 width: 6016,
                 height: 4016
             },
@@ -25,13 +25,29 @@ export const initialState = {
                 height: 4016
             },
             {
-                path: '/images/5.png',
+                path: '/images/land_2.jpg',
                 width: 4016,
                 height: 6016
             }
         ],
         'journalism': [],
-        'landscape': []
+        'landscape': [
+            {
+                path: '/images/land_1.jpg',
+                width: 6016,
+                height: 4016
+            },
+            {
+                path: '/images/land_2.jpg',
+                width: 4016,
+                height: 6016
+            },
+            {
+                path: '/images/4.jpg',
+                width: 6016,
+                height: 4016
+            },
+        ]
     },
     currentImageCollection: 'black&white',
     currentImage: null

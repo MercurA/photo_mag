@@ -7,18 +7,15 @@ import { ACTIONS } from "../utils/state/reducer"
 
 const DesktopContainer = () => {
     const context = useContext(AppContext)
-    const { dispatch } = context
+    const { dispatch, imageList, currentImageCollection } = context
 
     useEffect(() => {
+        const calcImageToSelect = Math.floor(imageList[currentImageCollection].length / 2)
         dispatch({
             type: ACTIONS.setImageDetails,
-            payload: {
-                path: '/images/2.png',
-                width: 6016,
-                height: 4016
-            },
+            payload: imageList[currentImageCollection][calcImageToSelect],
         })
-    }, [])
+    }, [currentImageCollection, dispatch, imageList])
 
     return (
         <>
