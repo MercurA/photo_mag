@@ -14,18 +14,18 @@ const Galery = () => {
 
     useEffect(() => {
         setItems(imageList[currentImageCollection])
-    },[currentImageCollection])
+    },[currentImageCollection, imageList])
 
 
     useEffect(() => {
-        const current = scrollContainerRef.current
+        const current = scrollContainerRef?.current
 
         const handleScroll = (e) => {
             if (e.deltaY > 0) {
                 setItems((prevItems) => {
                     dispatch({
                         type: ACTIONS.setCurrentImageToDisplay,
-                        payload: prevItems[3]
+                        payload: prevItems[Math.floor(prevItems.length / 2) + 1]
                     })
                     return [
                         ...prevItems.slice(1),
@@ -36,7 +36,7 @@ const Galery = () => {
                 setItems((prevItems) => {
                     dispatch({
                         type: ACTIONS.setCurrentImageToDisplay,
-                        payload: prevItems[prevItems.length - 4]
+                        payload: prevItems[Math.floor(prevItems.length / 2) - 1]
                     })
                     return [
                         prevItems[prevItems.length - 1],
@@ -52,7 +52,7 @@ const Galery = () => {
             current.removeEventListener('touchstart', handleScroll)
             current.removeEventListener('wheel', handleScroll)
         }
-    }, [items, dispatch])
+    }, [items, dispatch, scrollContainerRef])
 
 
 
