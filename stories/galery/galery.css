@@ -1,0 +1,29 @@
+.container {
+    max-height: 500px;
+    overflow: auto;
+    width: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.focus {
+    position: fixed;
+    width: 115px;
+    height: 105px;
+    z-index: 99;
+    padding: calc(0px + 5px);
+    outline: 2px solid #f9dc5c;
+    outline-offset: calc(-1*5px);
+    -webkit-mask: conic-gradient(at 15px 15px,#0000 75%,#000 0) 0 0/calc(100% - 15px) calc(100% - 15px), linear-gradient(#000 0 0) content-box;
+}
+
+.item {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    z-index: 99;
+    color: white;
+}
