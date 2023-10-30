@@ -44,7 +44,8 @@ exports[`Disktop Container should render Desktop cont correctly 1`] = `
           <div
             class="brand"
           >
-            HC
+            Horea's Photography
+             
           </div>
           <div
             class="categoryGroup"
@@ -176,7 +177,8 @@ exports[`Disktop Container should render Desktop cont correctly 1`] = `
         <div
           class="brand"
         >
-          HC
+          Horea's Photography
+           
         </div>
         <div
           class="categoryGroup"
