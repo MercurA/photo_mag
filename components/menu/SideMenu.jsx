@@ -23,7 +23,7 @@ const SideMenu = () => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.brand}>HC</div>
+            <div className={styles.brand}>{"Horea's Photography"} </div>
             <div className={styles.categoryGroup}>
                 {strings.selections.map((el, index) => (
                     <div

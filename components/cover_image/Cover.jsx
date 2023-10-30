@@ -4,7 +4,6 @@ import SideMenu from '../menu/SideMenu';
 import Comingsoon from '../misc/Comingsoon';
 
 const Cover = ({image}) => {
-    console.log(image)
     return (
         <div className={styles.container}>
             <div className={styles.effect}>

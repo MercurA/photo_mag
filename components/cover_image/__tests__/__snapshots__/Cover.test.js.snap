@@ -29,7 +29,8 @@ exports[`Cover component should render correctly 1`] = `
           <div
             class="brand"
           >
-            HC
+            Horea's Photography
+             
           </div>
           <div
             class="categoryGroup"
@@ -146,7 +147,8 @@ exports[`Cover component should render correctly 1`] = `
         <div
           class="brand"
         >
-          HC
+          Horea's Photography
+           
         </div>
         <div
           class="categoryGroup"
