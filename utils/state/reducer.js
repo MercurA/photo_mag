@@ -28,9 +28,50 @@ export const initialState = {
                 path: '/images/land_2.jpg',
                 width: 4016,
                 height: 6016
-            }
+            },
+            {
+                path: '/images/film_1.jpg',
+                width: 4492,
+                height: 6774
+            },
+            {
+                path: '/images/film_2.jpg',
+                width: 4492,
+                height: 6774
+            },
+            {
+                path: '/images/film_4.jpg',
+                width: 4492,
+                height: 6774
+            },
         ],
-        'journalism': [],
+        'people&cities': [
+            {
+                path: '/images/film_1.jpg',
+                width: 4492,
+                height: 6774
+            },
+            {
+                path: '/images/film_2.jpg',
+                width: 4492,
+                height: 6774
+            },
+            {
+                path: '/images/film_3.jpg',
+                width: 4492,
+                height: 6774
+            },
+            {
+                path: '/images/film_4.jpg',
+                width: 4492,
+                height: 6774
+            },
+            {
+                path: '/images/film_5.jpg',
+                width: 6774,
+                height: 4492
+            },
+        ],
         'landscape': [
             {
                 path: '/images/land_1.jpg',

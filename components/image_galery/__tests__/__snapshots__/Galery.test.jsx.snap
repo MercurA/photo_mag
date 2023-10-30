@@ -8,24 +8,14 @@ exports[`Galery should render correctly 1`] = `
       <div
         class="container"
         id="galery"
-      >
-        <div
-          class="focus"
-        />
-      </div>
-      <div />
+      />
     </div>
   </body>,
   "container": <div>
     <div
       class="container"
       id="galery"
-    >
-      <div
-        class="focus"
-      />
-    </div>
-    <div />
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

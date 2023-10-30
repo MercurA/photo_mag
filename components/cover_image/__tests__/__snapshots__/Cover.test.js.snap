@@ -52,11 +52,11 @@ exports[`Cover component should render correctly 1`] = `
             </div>
             <div
               class="text "
-              data-id="journalism"
+              data-id="people&cities"
               data-index="2"
-              id="journalism"
+              id="people&cities"
             >
-              Journalism
+              People and cities
             </div>
           </div>
           <div
@@ -169,11 +169,11 @@ exports[`Cover component should render correctly 1`] = `
           </div>
           <div
             class="text "
-            data-id="journalism"
+            data-id="people&cities"
             data-index="2"
-            id="journalism"
+            id="people&cities"
           >
-            Journalism
+            People and cities
           </div>
         </div>
         <div

@@ -12,9 +12,11 @@
 }
 
 .focus {
-    position: fixed;
-    width: 115px;
-    height: 105px;
+    position: relative;
+    width: 112px;
+    height: 112px;
+    top:-6px;
+    left:-6px;
     z-index: 99;
     padding: calc(0px + 5px);
     outline: 2px solid #f9dc5c;
@@ -25,7 +27,7 @@
 .item {
     position: relative;
     width: 100px;
-    height: 100px;
+    min-height: 100px;
     margin: 5px;
     z-index: 99;
     color: white;

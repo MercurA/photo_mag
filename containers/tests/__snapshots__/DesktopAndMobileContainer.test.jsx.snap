@@ -10,9 +10,6 @@ exports[`Disktop Container should render Desktop cont correctly 1`] = `
         id="galery"
       >
         <div
-          class="focus"
-        />
-        <div
           class="item"
         >
           <img
@@ -28,7 +25,6 @@ exports[`Disktop Container should render Desktop cont correctly 1`] = `
           />
         </div>
       </div>
-      <div />
       <div
         class="container"
       >
@@ -71,11 +67,11 @@ exports[`Disktop Container should render Desktop cont correctly 1`] = `
             </div>
             <div
               class="text "
-              data-id="journalism"
+              data-id="people&cities"
               data-index="2"
-              id="journalism"
+              id="people&cities"
             >
-              Journalism
+              People and cities
             </div>
           </div>
           <div
@@ -146,9 +142,6 @@ exports[`Disktop Container should render Desktop cont correctly 1`] = `
       id="galery"
     >
       <div
-        class="focus"
-      />
-      <div
         class="item"
       >
         <img
@@ -164,7 +157,6 @@ exports[`Disktop Container should render Desktop cont correctly 1`] = `
         />
       </div>
     </div>
-    <div />
     <div
       class="container"
     >
@@ -207,11 +199,11 @@ exports[`Disktop Container should render Desktop cont correctly 1`] = `
           </div>
           <div
             class="text "
-            data-id="journalism"
+            data-id="people&cities"
             data-index="2"
-            id="journalism"
+            id="people&cities"
           >
-            Journalism
+            People and cities
           </div>
         </div>
         <div
@@ -394,9 +386,9 @@ exports[`Disktop Container should render Desktop cont correctly 2`] = `
             </div>
             <div
               class="drawerItem"
-              data-id="journalism"
+              data-id="people&cities"
             >
-              Journalism
+              People and cities
             </div>
           </div>
           <div
@@ -541,9 +533,9 @@ exports[`Disktop Container should render Desktop cont correctly 2`] = `
           </div>
           <div
             class="drawerItem"
-            data-id="journalism"
+            data-id="people&cities"
           >
-            Journalism
+            People and cities
           </div>
         </div>
         <div

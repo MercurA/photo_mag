@@ -11,8 +11,8 @@ export const strings = {
             id: 'landscape'
         },
         {
-            name: 'Journalism',
-            id: 'journalism'
+            name: 'People and cities',
+            id: 'people&cities'
         },
     ],
     misc: {
