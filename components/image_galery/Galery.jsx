@@ -7,14 +7,14 @@ import { ACTIONS } from '../../utils/state/reducer'
 const Galery = () => {
     const context = useContext(AppContext)
     const { imageList, currentImageCollection, dispatch } = context
-    
+    const [ focusedImage, setFocusedImage ] = useState(null)
     const scrollContainerRef = useRef(null)
     const itemRef = useRef(null)
     const [items, setItems] = useState(imageList[currentImageCollection])
 
     useEffect(() => {
         setItems(imageList[currentImageCollection])
-    },[currentImageCollection, imageList])
+    }, [currentImageCollection, imageList])
 
 
     useEffect(() => {
@@ -27,6 +27,7 @@ const Galery = () => {
                         type: ACTIONS.setCurrentImageToDisplay,
                         payload: prevItems[Math.floor(prevItems.length / 2) + 1]
                     })
+                    setFocusedImage(Math.floor(prevItems.length / 2) )
                     return [
                         ...prevItems.slice(1),
                         prevItems[0]
@@ -38,6 +39,7 @@ const Galery = () => {
                         type: ACTIONS.setCurrentImageToDisplay,
                         payload: prevItems[Math.floor(prevItems.length / 2) - 1]
                     })
+                    setFocusedImage(Math.floor(prevItems.length / 2))
                     return [
                         prevItems[prevItems.length - 1],
                         ...prevItems.slice(0, -1),
@@ -57,15 +59,15 @@ const Galery = () => {
 
 
     return (
-        <>  
+        <>
             <div
                 ref={scrollContainerRef}
                 className={styles.container}
                 id="galery"
-            >   
-                <div className={styles.focus}></div>
+            >
                 {items?.map((image, index) => (
-                    <div className={styles.item} key={index} ref={itemRef}>
+                    <div className={styles.item} key={index} ref={itemRef} >
+                        {index === focusedImage && <div className={styles.focus}></div>}
                         <Image
                             src={image.path}
                             alt={''}
@@ -75,7 +77,6 @@ const Galery = () => {
                     </div>
                 ))}
             </div>
-            <div></div>
         </>
     )
 }

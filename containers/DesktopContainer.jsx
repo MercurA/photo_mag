@@ -11,6 +11,7 @@ const DesktopContainer = () => {
 
     useEffect(() => {
         const calcImageToSelect = Math.floor(imageList[currentImageCollection].length / 2)
+        
         dispatch({
             type: ACTIONS.setImageDetails,
             payload: imageList[currentImageCollection][calcImageToSelect],

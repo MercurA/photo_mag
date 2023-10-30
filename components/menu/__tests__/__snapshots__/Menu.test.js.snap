@@ -65,9 +65,9 @@ exports[`Menu should render corectly 1`] = `
             </div>
             <div
               class="drawerItem"
-              data-id="journalism"
+              data-id="people&cities"
             >
-              Journalism
+              People and cities
             </div>
           </div>
           <div
@@ -193,9 +193,9 @@ exports[`Menu should render corectly 1`] = `
           </div>
           <div
             class="drawerItem"
-            data-id="journalism"
+            data-id="people&cities"
           >
-            Journalism
+            People and cities
           </div>
         </div>
         <div
@@ -378,9 +378,9 @@ exports[`Menu should render corectly with drawer open 1`] = `
             </div>
             <div
               class="drawerItem"
-              data-id="journalism"
+              data-id="people&cities"
             >
-              Journalism
+              People and cities
             </div>
           </div>
           <div
@@ -506,9 +506,9 @@ exports[`Menu should render corectly with drawer open 1`] = `
           </div>
           <div
             class="drawerItem"
-            data-id="journalism"
+            data-id="people&cities"
           >
-            Journalism
+            People and cities
           </div>
         </div>
         <div
