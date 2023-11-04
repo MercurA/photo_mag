@@ -1,8 +1,23 @@
-.backBtn {
-    position: absolute;
-    color: white;
-    width: 100px;
-    height: 50px;
-    border: 1px solid white;
-    cursor: pointer;
+.container {
+    height: 100vh;
+    width: 100%;
+}
+
+.innerContainer {
+    height: 100%;
+    margin: 0 300px;
+}
+
+@media screen and (max-width: 800px) {
+    .innerContainer {
+        height: 100%;
+        margin: 0 100px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .innerContainer {
+        height: 100%;
+        margin: 0 30px;
+    }
 }

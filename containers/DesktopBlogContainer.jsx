@@ -1,11 +1,12 @@
+import Article from '../components/article/Article';
 import styles from './general_styles.module.css'
 
 const DesktopBlogContainer = () => {
 
     return (
-        <div>
-            <div className={styles.backBtn}>
-                <div className={styles.arrow}>{'<'}</div>
+        <div className={styles.container}>
+            <div className={styles.innerContainer}>
+                <Article />
             </div>
         </div>
     )
