@@ -1,13 +1,17 @@
 import '../styles/globals.css'
-import { Analytics } from '@vercel/analytics/react';
+import { createContext, useReducer } from "react"
+import reducer, { initialState } from "../utils/state/reducer"
 
-function MyApp({ Component, pageProps }) {
+export const AppContext = createContext(null)
+
+const MyApp = ({ Component, pageProps }) => {
+  const [state, dispatch] = useReducer(reducer, initialState)
+
   return (
-    <>
+    <AppContext.Provider value={{ ...state, dispatch }}>
       <Component {...pageProps} />
-      <Analytics />
-    </>
-    )
+    </AppContext.Provider>
+  )
 }
 
 export default MyApp

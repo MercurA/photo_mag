@@ -3,7 +3,7 @@ import styles from './sidemenu.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import { strings } from '../../utils/constants'
-import { AppContext } from '../../pages'
+import { AppContext } from '../../pages/_app'
 import { ACTIONS } from '../../utils/state/reducer'
 
 const SideMenu = () => {

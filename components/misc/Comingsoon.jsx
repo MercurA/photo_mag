@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { AppContext } from "../../pages"
+import { AppContext } from "../../pages/_app"
 import { strings } from "../../utils/constants"
 import styles from './misc.module.css'
 

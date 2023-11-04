@@ -1,7 +1,7 @@
 import styles from './cardImage.module.css'
 import Image from 'next/image'
 
-const CardImage = ({image, setImageDetails, location}) => {
+const CardImage = ({image, setImageDetails}) => {
     return (
         <div className={styles.cardWrapper} onClick={() => setImageDetails && setImageDetails(image)}>
             <Image

@@ -1,22 +1,21 @@
-import { createContext, useEffect, useReducer } from "react"
 import Head from "next/head"
+import { useContext, useEffect } from "react"
 
-import reducer, { initialState } from "../utils/state/reducer"
 import { strings } from "../utils/constants"
 import DesktopContainer from "../containers/DesktopContainer"
 import MobileContainer from "../containers/MobileContainer"
+import { AppContext } from "./_app"
 
-export const AppContext = createContext(null)
-
-const Home = ({ isMobileDevice }) => {
-  const [state, dispatch] = useReducer(reducer, initialState)
+const Home = ({isMobileDevice}) => {
+  const context = useContext(AppContext)
+  const { isPopupOn } = context
 
   const preventDefault = (e) => {
     e.preventDefault()
   }
 
   useEffect(() => {
-    if (state.isPopupOn) {
+    if (isPopupOn) {
       window.addEventListener('mousewheel', preventDefault, { passive: false })
       window.addEventListener('touchmove', preventDefault, { passive: false })
     }
@@ -25,23 +24,23 @@ const Home = ({ isMobileDevice }) => {
       window.removeEventListener('mousewheel', preventDefault, { passive: false })
       window.removeEventListener('touchmove', preventDefault, { passive: false })
     }
-  }, [state.isPopupOn])
+  }, [isPopupOn])
 
 
   return (
-    <AppContext.Provider value={{...state, dispatch, isMobileDevice}}>
+    <>
       <Head>
         <title>{strings.title}</title>
         <meta name="home page" content="Photo galery" />
         <meta name="keywords" content="photos, photography, hi-res, galery" />
       </Head>
       {isMobileDevice ? <MobileContainer /> : <DesktopContainer />}
-    </AppContext.Provider>
+    </>
   )
 }
 
 Home.getInitialProps = ({ req }) => {
-  const userAgent = req.headers['user-agent']
+  const userAgent = req?.headers['user-agent']
 
   const isMobileDevice =
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -50,6 +49,5 @@ Home.getInitialProps = ({ req }) => {
 
   return { isMobileDevice }
 }
-
 
 export default Home

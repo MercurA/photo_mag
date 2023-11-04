@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import { ACTIONS } from '../../utils/state/reducer'
 import CardImage from './CardImage'
 import styles from './cardImage.module.css'
-import { AppContext } from '../../pages'
+import { AppContext } from '../../pages/_app'
 
 const CardContainer = () => {
     const context = useContext(AppContext)

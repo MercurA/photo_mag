@@ -2,7 +2,7 @@ import { useContext, useEffect } from "react"
 
 import Galery from "../components/image_galery/Galery"
 import Cover from '../components/cover_image/Cover'
-import { AppContext } from "../pages"
+import { AppContext } from "../pages/_app"
 import { ACTIONS } from "../utils/state/reducer"
 
 const DesktopContainer = () => {
