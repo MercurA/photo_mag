@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react'
-import { AppContext } from '../../../pages'
+import { AppContext } from '../../../pages/_app'
 import CardImage from '../CardImage'
 import CardContainer from '../CardContainer'
 
@@ -8,7 +8,7 @@ describe('Menu', () => {
         isDrawerOpen: false,
         isPopupOn: false,
         imageList: ['/images/2.jpg'],
-        currentImageCollection: 'black&white'
+        currentImageCollection: 'black&white',
     }
 
     it('should render correctly', () => {
@@ -23,6 +23,7 @@ describe('Menu', () => {
 
     it('should render correctly in the container', () => {
         const {imageList, currentImageCollection} = state
+        
         const comp = render(
             <AppContext.Provider value={state}>
                 <CardContainer>

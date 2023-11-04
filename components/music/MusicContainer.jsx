@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { useContext, useEffect, useRef } from 'react'
 
 import styles from './music.module.css'
-import { AppContext } from '../../pages'
+import { AppContext } from '../../pages/_app'
 import { ACTIONS } from '../../utils/state/reducer'
 
 const MusicContainer = ({ dispatch }) => {

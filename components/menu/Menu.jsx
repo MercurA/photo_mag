@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react'
 
 import styles from './menu.module.css'
-import { AppContext } from '../../pages'
+import { AppContext } from '../../pages/_app'
 import MusicContainer from '../music/MusicContainer'
 import { strings } from '../../utils/constants'
 import { ACTIONS } from '../../utils/state/reducer'

@@ -1,6 +1,6 @@
 import {render} from '@testing-library/react'
 import Cover from '../Cover'
-import { AppContext } from '../../../pages'
+import { AppContext } from '../../../pages/_app'
 
 describe("Cover component", () => {
     let state = {

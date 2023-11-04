@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import Menu from '../Menu'
-import { AppContext } from '../../../pages'
+import { AppContext } from '../../../pages/_app'
 
 describe('Menu', () => {
     let state = {

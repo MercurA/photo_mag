@@ -1,7 +1,8 @@
 import { useContext, useEffect, useRef, useState } from 'react'
-import styles from './galery.module.css'
-import { AppContext } from '../../pages'
 import Image from 'next/image'
+
+import styles from './galery.module.css'
+import { AppContext } from '../../pages/_app'
 import { ACTIONS } from '../../utils/state/reducer'
 
 const Galery = () => {

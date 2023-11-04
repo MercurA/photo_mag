@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react"
 import { createPortal } from "react-dom"
 import Image from "next/image"
 
-import { AppContext } from "../../pages"
+import { AppContext } from "../../pages/_app"
 import styles from './cardImage.module.css'
 import { ACTIONS } from "../../utils/state/reducer"
 

@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react'
-import { AppContext } from '../../../pages'
+import { AppContext } from '../../../pages/_app'
 import Drawer from '../Drawer'
 
 describe('Menu', () => {
