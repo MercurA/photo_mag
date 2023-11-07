@@ -36,3 +36,6 @@ yarn-error.log*
 
 #Cypress screenshots
 /cypress/screenshots
+
+#silance
+/utils/riddles.js

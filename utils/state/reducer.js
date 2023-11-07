@@ -2,6 +2,7 @@ export const initialState = {
     music: false,
     isDrawerOpen: false,
     isPopupOn: false,
+    puzzleRezolved: false,
     imageList: {
         'black&white': [
             {
@@ -100,7 +101,8 @@ export const ACTIONS = {
     setImageDetails: 'setImageDetails',
     setPopupState: 'setPopupState',
     setCurrentImageToDisplay: 'setCurrentImageToDisplay',
-    setImageCollection: 'setImageCollection'
+    setImageCollection: 'setImageCollection',
+    setPuzzleToRezolved: 'setPuzzleToRezolved' 
 }
 
 export default function reducer(state, action) {
@@ -144,7 +146,11 @@ export default function reducer(state, action) {
                     currentImage: state.imageList[action.payload][2]
                 }
             }
-
+        case ACTIONS.setPuzzleToRezolved: 
+            return {
+                ...state,
+                puzzleRezolved: action.payload
+            }
         default:
             return state
     }
