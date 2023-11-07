@@ -1,0 +1,34 @@
+.container {
+    width: 100%;
+    color: white;
+}
+
+.container > article {
+    font: 1.3rem/26px 'EB Garamond', serif;
+}
+
+.container > article > h1 {
+    text-align: center;
+}
+
+
+.imgWrapper {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+}
+
+.imgWrapper > img {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+    position: relative !important;
+}
+
+.descText {
+    font: .9rem 'EB Garamond', serif;
+    text-align: center;
+    opacity: .5;
+}
