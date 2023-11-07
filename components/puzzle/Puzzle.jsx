@@ -3,7 +3,7 @@ import {useEffect, useState} from 'react'
 import styles from './puzzle.module.css'
 import { ACTIONS } from '../../utils/state/reducer'
 import riddles from '../../utils/riddles'
-
+import {getCookie} from '../../utils/cookieMisc'
 
 const Puzzle = ({dispatch}) => {
     const [riddle, setRiddle] = useState([])
@@ -22,7 +22,7 @@ const Puzzle = ({dispatch}) => {
                 ...riddle,
                 text: [riddle.text[0],riddle.text[1], riddle.solution]
             })
-            document.cookie = "{'isRiddleSolved':true}; expires=Fri 25 Dec 2024"
+            document.cookie = "isRiddleSolved=true; expires=Fri 25 Dec 2024"
         } else {
             setSolutionFound(false)
         }
@@ -45,8 +45,8 @@ const Puzzle = ({dispatch}) => {
                 </div>
                 <div className={styles.inputContainer}>
                     {!solutionFound ? 
-                        <input type="text" placeholder='?' className={styles.input} onChange={handleOnChange} disabled={setSolutionFound} /> :
-                        <div onClick={handleRoute}>Enter</div>
+                        <input id="riddleInput" type="text" placeholder='?' className={styles.input} onChange={handleOnChange} disabled={setSolutionFound} /> :
+                        <div id="enter" onClick={handleRoute}>Enter</div>
                     }
                 </div>
             </div>

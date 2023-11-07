@@ -2,7 +2,7 @@ export const initialState = {
     music: false,
     isDrawerOpen: false,
     isPopupOn: false,
-    puzzleRezolved: false,
+    routed: false,
     imageList: {
         'black&white': [
             {
@@ -149,7 +149,7 @@ export default function reducer(state, action) {
         case ACTIONS.setPuzzleToRezolved: 
             return {
                 ...state,
-                puzzleRezolved: action.payload
+                routed: action.payload
             }
         default:
             return state
