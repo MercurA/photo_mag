@@ -6,7 +6,7 @@ import riddles from '../../utils/riddles'
 
 
 const Puzzle = ({dispatch}) => {
-    const [riddle, setRiddle] = useState(null)
+    const [riddle, setRiddle] = useState([])
     const [solutionFound, setSolutionFound] = useState(false)
 
     useEffect(() => {
@@ -22,6 +22,7 @@ const Puzzle = ({dispatch}) => {
                 ...riddle,
                 text: [riddle.text[0],riddle.text[1], riddle.solution]
             })
+            document.cookie = "{'isRiddleSolved':true}; expires=Fri 25 Dec 2024"
         } else {
             setSolutionFound(false)
         }
