@@ -12,7 +12,7 @@ export const Main = {
         image: {
             width: 1636,
             height: 2545,
-            path: '../public/images/1.jpg',
+            path: '/images/arh_1.jpg',
             alt: "street view"
         }
     }

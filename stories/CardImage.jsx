@@ -2,7 +2,6 @@ import './cardImage.css'
 import Image from 'next/image'
 import React from 'react';
 import PropTypes from 'prop-types';
-import imageSrc from './assets/1.jpg'
 
 export const CardImage = ({image, setImageDetails}) => {
     return (
@@ -26,7 +25,7 @@ CardImage.defaultProps = {
     image: {
         width: 1636,
         height: 2545,
-        path: imageSrc,
+        path: '/images/arh_1.jpg',
         alt: "street view"
     }
 }
