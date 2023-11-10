@@ -3,7 +3,6 @@ import {useEffect, useState} from 'react'
 import styles from './puzzle.module.css'
 import { ACTIONS } from '../../utils/state/reducer'
 import riddles from '../../utils/riddles'
-import {getCookie} from '../../utils/cookieMisc'
 
 const Puzzle = ({dispatch}) => {
     const [riddle, setRiddle] = useState([])

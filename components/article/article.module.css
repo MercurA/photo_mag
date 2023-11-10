@@ -32,3 +32,8 @@
     text-align: center;
     opacity: .5;
 }
+
+.space {
+    height: 100px;
+    width: 100%;
+}

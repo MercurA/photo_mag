@@ -19,7 +19,7 @@ const DesktopBlogContainer = () => {
         <div className={styles.container}>
             {routed || solved ?
                 (<div className={styles.innerContainer}>
-                    <Article />
+                   {[1,2].map((el, i) =>( <Article key={i}/>))}
                 </div>) :
                 <Puzzle dispatch={dispatch} />
             }
