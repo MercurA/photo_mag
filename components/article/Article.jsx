@@ -11,7 +11,7 @@ const Article = () => {
     return (
         <div className={styles.container}>
             <article>
-                <h1>Title</h1>
+                <h1 id="title">Title</h1>
                 {data.aboveImg && data.aboveImg.length &&
                     <aside>
                         <div className={styles.imgWrapper}>
@@ -51,6 +51,7 @@ const Article = () => {
                     </aside>
                 }
             </article>
+            <div className={styles.space}></div>
         </div>
     )
 }

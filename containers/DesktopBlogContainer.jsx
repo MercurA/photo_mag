@@ -4,35 +4,22 @@ import styles from './general_styles.module.css'
 import { AppContext } from '../pages/_app';
 import Puzzle from '../components/puzzle/Puzzle';
 import { useEffect } from 'react';
+import { getCookie } from '../utils/cookieMisc';
 
 const DesktopBlogContainer = () => {
     const context = useContext(AppContext)
-    const {dispatch} = context
-    const [puzzleRezolved, setPuzzleToRezolved] = useState(false)
-    useEffect(() => {
-        setPuzzleToRezolved(getCookie('isRiddleSolved'))
-    },[])
+    const {dispatch, routed} = context
+    const [solved, setSolved] = useState(false)
 
-    function getCookie(cname) {
-        let name = cname + "=";
-        let ca = document.cookie.split(';');
-        for(let i = 0; i < ca.length; i++) {
-          let c = ca[i];
-          while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-          }
-          if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-          }
-        }
-        return "";
-      }
+    useEffect(() => {
+      setSolved(getCookie('isRiddleSolved'))
+    },[])
 
     return (
         <div className={styles.container}>
-            {puzzleRezolved ?
+            {routed || solved ?
                 (<div className={styles.innerContainer}>
-                    <Article />
+                   {[1,2].map((el, i) =>( <Article key={i}/>))}
                 </div>) :
                 <Puzzle dispatch={dispatch} />
             }

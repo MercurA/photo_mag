@@ -46,7 +46,10 @@ const SideMenu = () => {
                         <Image src={'/icons/github_white.svg'} alt="github logo" width={20} height={20} />
                     </Link>
                     <Link className={styles.link} href="https://soundcloud.com/dionis5" target="_blank">
-                        <Image src={'/icons/soundcloud.jpg'} alt="github logo" width={20} height={20} />
+                        <Image src={'/icons/soundcloud2.svg'} alt="soundcloud logo" width={20} height={20} />
+                    </Link>
+                    <Link className={styles.link} href="https://www.behance.net/horeaconstan" target="_blank">
+                        <Image src={'/icons/behance.svg'} alt="behance logo" width={20} height={20} />
                     </Link>
                 </div>
             </div>

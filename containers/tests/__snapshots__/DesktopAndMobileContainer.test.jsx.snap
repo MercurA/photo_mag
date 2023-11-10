@@ -120,13 +120,28 @@ exports[`Disktop Container should render Desktop cont correctly 1`] = `
                 target="_blank"
               >
                 <img
-                  alt="github logo"
+                  alt="soundcloud logo"
                   data-nimg="1"
                   decoding="async"
                   height="20"
                   loading="lazy"
-                  src="/_next/image?url=%2Ficons%2Fsoundcloud.jpg&w=48&q=75"
-                  srcset="/_next/image?url=%2Ficons%2Fsoundcloud.jpg&w=32&q=75 1x, /_next/image?url=%2Ficons%2Fsoundcloud.jpg&w=48&q=75 2x"
+                  src="/icons/soundcloud2.svg"
+                  style="color: transparent;"
+                  width="20"
+                />
+              </a>
+              <a
+                class="link"
+                href="https://www.behance.net/horeaconstan"
+                target="_blank"
+              >
+                <img
+                  alt="behance logo"
+                  data-nimg="1"
+                  decoding="async"
+                  height="20"
+                  loading="lazy"
+                  src="/icons/behance.svg"
                   style="color: transparent;"
                   width="20"
                 />
@@ -253,13 +268,28 @@ exports[`Disktop Container should render Desktop cont correctly 1`] = `
               target="_blank"
             >
               <img
-                alt="github logo"
+                alt="soundcloud logo"
                 data-nimg="1"
                 decoding="async"
                 height="20"
                 loading="lazy"
-                src="/_next/image?url=%2Ficons%2Fsoundcloud.jpg&w=48&q=75"
-                srcset="/_next/image?url=%2Ficons%2Fsoundcloud.jpg&w=32&q=75 1x, /_next/image?url=%2Ficons%2Fsoundcloud.jpg&w=48&q=75 2x"
+                src="/icons/soundcloud2.svg"
+                style="color: transparent;"
+                width="20"
+              />
+            </a>
+            <a
+              class="link"
+              href="https://www.behance.net/horeaconstan"
+              target="_blank"
+            >
+              <img
+                alt="behance logo"
+                data-nimg="1"
+                decoding="async"
+                height="20"
+                loading="lazy"
+                src="/icons/behance.svg"
                 style="color: transparent;"
                 width="20"
               />
