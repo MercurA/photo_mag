@@ -7,7 +7,8 @@ const Cover = ({image}) => {
     return (
         <div className={styles.container}>
             <div className={styles.effect}>
-                {image ? <Image 
+                {image ? 
+                    <Image 
                     src={image?.path} 
                     fill 
                     sizes="(max-width: 1024px) 70vw , 100vw" 
