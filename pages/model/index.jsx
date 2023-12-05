@@ -1,5 +1,5 @@
 import { Canvas } from '@react-three/fiber'
-import {Model} from './Untitled'
+import { Model } from './Untitled'
 import { OrbitControls } from '@react-three/drei';
 import React, { Suspense } from 'react'
 
