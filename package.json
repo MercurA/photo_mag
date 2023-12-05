@@ -14,13 +14,16 @@
     "cy:run": "cypress run --e2e"
   },
   "dependencies": {
+    "@react-three/fiber": "^8.15.12",
+    "@types/three": "^0.159.0",
     "@vercel/analytics": "^1.1.1",
     "@vercel/postgres": "^0.5.1",
     "i": "^0.3.7",
     "next": "13.4.19",
     "npm": "^10.2.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "three": "^0.159.0"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "7.4.5",
