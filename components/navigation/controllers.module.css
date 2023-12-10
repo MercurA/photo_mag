@@ -18,7 +18,13 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    z-index: 10;
 }
+
+.arrowUp > img {
+    pointer-events: none
+}
+
 .arrowDown {
     transform: rotate(90deg);
     grid-column: 2;
@@ -27,7 +33,13 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    z-index: 1;
 }
+
+.arrowDown > img {
+    pointer-events: none
+}
+
 .arrowLeft {
     grid-column: 1;
     grid-row: 2;
@@ -35,7 +47,13 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    z-index: 1;
 }
+
+.arrowLeft > img {
+    pointer-events: none
+}
+
 .arrowRight {
     grid-column: 3;
     grid-row: 2;
@@ -43,4 +61,9 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    z-index: 1;
+}
+
+.arrowRight > img {
+    pointer-events: none
 }
