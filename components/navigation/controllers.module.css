@@ -1,0 +1,46 @@
+.container {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%);
+    display: grid;
+    width: 82px;
+    grid-template-columns: 1fr 3fr 3fr;
+    grid-template-rows: 2fr 4fr 2fr;
+    z-index: 99;
+}
+
+.arrowUp {
+    transform: rotate(-90deg);
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.arrowDown {
+    transform: rotate(90deg);
+    grid-column: 2;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.arrowLeft {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.arrowRight {
+    grid-column: 3;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

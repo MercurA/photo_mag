@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import styles from './model.module.css'
 import { Canvas, useFrame } from '@react-three/fiber'
+import Controllers from '../../components/navigation/Controlers'
 
 const Sphere = ({position, size, color}) => {
     const [hovered, setHovered] = useState(false)
@@ -19,6 +20,7 @@ const Sphere = ({position, size, color}) => {
 const Model = () => {
     return (
         <div className={styles.container}>
+            <Controllers />
             <Canvas >
                 <directionalLight position={[0, 0, 7]} />
                 <Sphere position={[0,0,0]} size={[1,1,1]} color={'orange'}/>
