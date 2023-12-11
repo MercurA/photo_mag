@@ -1,8 +1,9 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import styles from './model.module.css'
-import { Canvas, useFrame } from '@react-three/fiber'
+import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import Controllers from '../../components/navigation/Controlers'
-import { CameraControls } from '@react-three/drei'
+import { CameraControls, OrbitControls } from '@react-three/drei'
+import * as THREE from "three";
 
 const Sphere = ({ position, size, color }) => {
     const [hovered, setHovered] = useState(false)
@@ -21,21 +22,23 @@ const Sphere = ({ position, size, color }) => {
     )
 }
 
-const Scene = ({cameraPos}) => {
-    const cameraControlsRef = useRef()
+const Scene = ({ cameraPos }) => {
+    const cameraControlsRef = useRef(new THREE.Vector3(0, 0, 0))
+    const { camera } = useThree();
 
-    useFrame(() => {
+    useFrame((state, delta) => {
         cameraControlsRef.current.moveTo(cameraPos[0],0,0, true)
+        console.log(state)
     })
 
     return (
         <>
             <group>
                 <directionalLight position={[0, 0, 7]} />
-                <Sphere position={[0,0,0]} size={[1, 1, 1]} color={'orange'} />
+                <Sphere position={[0, 0, 0]} size={[1, 1, 1]} color={'orange'} />
                 <CameraControls
+                    makeDefault
                     ref={cameraControlsRef}
-                    enabled={false}
                 />
             </group>
         </>
@@ -44,7 +47,7 @@ const Scene = ({cameraPos}) => {
 
 const Model = () => {
     const [position, setPosition] = useState([0, 0, 0])
-    
+
     const handleDirection = (e) => {
         if (e.target.id === 'right') {
             setPosition([3, 0, 0])
@@ -58,7 +61,8 @@ const Model = () => {
         <div className={styles.container}>
             <Controllers handleDirection={handleDirection} />
             <Canvas >
-                <Scene cameraPos={position}/>
+            <ambientLight intensity={0.03} />
+                <Scene cameraPos={position} />
             </Canvas>
         </div>
     )
