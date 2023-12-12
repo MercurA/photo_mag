@@ -33,6 +33,6 @@ yarn-error.log*
 
 
 /public/media
-
+/public/model
 #Cypress screenshots
 /cypress/screenshots
