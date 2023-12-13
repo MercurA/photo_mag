@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { useCursor, MeshReflectorMaterial, Image, Text, Environment } from '@react-three/drei'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
-import Frame from '../../components/3d_models/Frame'
+import Frames from '../../components/3d_models/Frames'
 
 const Model = () => {
     return (
@@ -9,7 +9,7 @@ const Model = () => {
             <Canvas >
                 <color attach="background" args={['#191920']} />
                 <group position={[0, -0.5, 0]}>
-                    <Frame />
+                    <Frames />
                     <mesh rotation={[-Math.PI / 2, 0, 0]}>
                         <planeGeometry args={[50, 50]} />
                         <MeshReflectorMaterial

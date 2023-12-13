@@ -6,14 +6,13 @@ Command: npx gltfjsx@6.2.15 ./frame1.glb
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
-export function FrameModelOne(props) {
+export function FrameModel_1(props) {
   const { nodes, materials } = useGLTF('/model/frame1.glb')
+  
   return (
     <group {...props} dispose={null}>
-      <group rotation={[Math.PI / 2, 0, 0]} scale={[1.48, 1, 1]}>
-        <mesh geometry={nodes.Plane.geometry} material={materials['Material.002']} />
-        <mesh geometry={nodes.Plane_1.geometry} material={materials['Material.003']} />
-      </group>
+      <mesh geometry={nodes.Plane_1.geometry} material={materials['Material.001']} />
+      <mesh geometry={nodes.Plane_2.geometry} material={materials['Material.002']} />
     </group>
   )
 }
