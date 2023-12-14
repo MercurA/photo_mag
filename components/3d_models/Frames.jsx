@@ -1,7 +1,9 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { useCursor } from "@react-three/drei";
-import { Frame } from './Frame'
-
+import { useFrame } from '@react-three/fiber'
+import { FrameModel_1 } from './FrameModel_1';
+import * as THREE from 'three'
+import {easing} from 'maath'
 const frames = [
     {
         mats: ['Material.001', 'Material.002'],
@@ -13,17 +15,33 @@ const frames = [
     },
 ]
 
-
 const Frames = () => {
     const ref = useRef()
+    const [frameRef, setFrameRef] = useState(null)
+    const vector = new THREE.Vector3()
+    const handleClicked = (e, ref) => {
+        setFrameRef(ref)
+    }
+
+    useEffect(() => {
+       
+    })
+
+    useFrame((state) => {
+        if(frameRef !== null) {
+            const {x, y, z} = frameRef.current.position
+            state.camera.lookAt(frameRef.current.position)
+            state.camera.position.lerp(vector.set(x, y, z + 2.5), 0.1)
+            state.camera.updateProjectionMatrix()
+        }
+        return null
+    })
 
     return (
         <group
             ref={ref}
-            // onClick={(e) => (e.stopPropagation(), setLocation(clicked.current === e.object ? '/' : '/item/' + e.object.name))}
-            // onPointerMissed={() => setLocation('/')}
         >
-                
+            <FrameModel_1 handleClicked={(e) => handleClicked(e, ref)}/>
         </group>
     )
 }

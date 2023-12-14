@@ -4,6 +4,8 @@ import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import Frames from '../../components/3d_models/Frames'
 
 const Model = () => {
+    const frameRef = useRef()
+    
     return (
         <div style={{height: '100vh'}}>
             <Canvas >
